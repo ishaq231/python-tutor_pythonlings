@@ -1,0 +1,412 @@
+format_version = 1
+welcome_message = "Welcome to pythonlings! Save a file to re-run its checks."
+final_message = "All exercises complete. 🐍 Nice work."
+
+[[exercises]]
+name = "variables1"
+path = "exercises/variables/variables1.py"
+hint = "Declare a, b, c with concrete values of the right type. A bare 0 is an int; 0.0 is a float; \"\" is the empty string."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables2"
+path = "exercises/variables/variables2.py"
+hint = "a and b are ints; c is a string. Pick values so a + b == 13 and a % b == 1, then check that str(a) + c equals \"10hello\"."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables3"
+path = "exercises/variables/variables3.py"
+hint = "Python literal types: 7 is an int, 0.5 is a float, and True is a bool."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables4"
+path = "exercises/variables/variables4.py"
+hint = "A variable can be reassigned any number of times; each new assignment replaces the old value."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables5"
+path = "exercises/variables/variables5.py"
+hint = "Augmented assignment: += adds, -= subtracts, *= multiplies. Replace each ??? with the right operator."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables6"
+path = "exercises/variables/variables6.py"
+hint = "Multiple assignment lets you unpack a tuple in one line: x, y = 1, 2"
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables7"
+path = "exercises/variables/variables7.py"
+hint = "Python's tuple-swap idiom: a, b = b, a swaps both values in one statement."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables8"
+path = "exercises/variables/variables8.py"
+hint = "type(x) returns the type object; int(), str(), and float() convert between types."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables9"
+path = "exercises/variables/variables9.py"
+hint = "Convention: name constants in ALL_CAPS. Then use TAX_RATE in the price expression."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "variables10"
+path = "exercises/variables/variables10.py"
+hint = "Compute each result as a single expression using width and height: area, perimeter, and the Pythagorean diagonal."
+docs = "https://docs.python.org/3/tutorial/introduction.html"
+
+[[exercises]]
+name = "strings1"
+path = "exercises/strings/strings1.py"
+hint = "A string literal is written with quotes: greeting = \"hello\""
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings2"
+path = "exercises/strings/strings2.py"
+hint = "Concatenate with +: first + \" \" + last gives you the full name."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings3"
+path = "exercises/strings/strings3.py"
+hint = "word[0] gives the first character; word[-1] gives the last."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings4"
+path = "exercises/strings/strings4.py"
+hint = "sentence[4:9] extracts characters at indices 4, 5, 6, 7, 8."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings5"
+path = "exercises/strings/strings5.py"
+hint = "len(text) counts characters; text.upper() and text.lower() change case."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings6"
+path = "exercises/strings/strings6.py"
+hint = "raw.strip() removes surrounding whitespace; .replace(old, new) swaps substrings."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings7"
+path = "exercises/strings/strings7.py"
+hint = "csv_line.split(\",\") splits on commas; \", \".join(items) reassembles with a separator."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings8"
+path = "exercises/strings/strings8.py"
+hint = "An f-string looks like: f\"Hello, {name}! You are {age} years old.\""
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings9"
+path = "exercises/strings/strings9.py"
+hint = "\"fox\" in sentence returns a bool; sentence.find(\"fox\") returns the start index."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "strings10"
+path = "exercises/strings/strings10.py"
+hint = "Use f\"...{price:.2f}\" to format the price to two decimal places."
+docs = "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+
+[[exercises]]
+name = "conditionals1"
+path = "exercises/conditionals/conditionals1.py"
+hint = "Replace ??? with the variable name `is_sunny` — when it is True, the if-block runs."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals2"
+path = "exercises/conditionals/conditionals2.py"
+hint = "Add an `else:` branch after the if-block that returns \"non-positive\"."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals3"
+path = "exercises/conditionals/conditionals3.py"
+hint = "Add `elif score >= 80: return \"B\"` and `elif score >= 70: return \"C\"` before the final `return \"F\"`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals4"
+path = "exercises/conditionals/conditionals4.py"
+hint = "Replace the two ???s with the comparison operators `<` and `==`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals5"
+path = "exercises/conditionals/conditionals5.py"
+hint = "Use `and` to require both conditions in can_ride, and `or` to accept either in gets_discount."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals6"
+path = "exercises/conditionals/conditionals6.py"
+hint = "is_closed should return `not is_open`; neither_zero should return `a != 0 and b != 0` or use `not` on each."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals7"
+path = "exercises/conditionals/conditionals7.py"
+hint = "Inside the else block, nest `if is_member: return 8` and `else: return 12`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals8"
+path = "exercises/conditionals/conditionals8.py"
+hint = "Write `if value:` to test truthiness; add an `else: return \"empty\"` branch."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals9"
+path = "exercises/conditionals/conditionals9.py"
+hint = "The ternary form is: `return n if n >= 0 else -n`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "conditionals10"
+path = "exercises/conditionals/conditionals10.py"
+hint = "Use `if n > 100`, `elif n > 0`, `elif n == 0`, `elif n >= -100`, `else` for the five cases."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+
+[[exercises]]
+name = "loops1"
+path = "exercises/loops/loops1.py"
+hint = "Write `for n in range(1, 6): total += n` to add 1 through 5."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops2"
+path = "exercises/loops/loops2.py"
+hint = "Loop `for fruit in fruits:` and append `fruit.upper()` to `upper_fruits`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops3"
+path = "exercises/loops/loops3.py"
+hint = "Write `while n > 0:`, append `n`, then `n -= 1` to count down."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops4"
+path = "exercises/loops/loops4.py"
+hint = "Inside one loop use `total += num` and `product *= num` to accumulate both values."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops5"
+path = "exercises/loops/loops5.py"
+hint = "Inside `while i < len(values):`, check `if values[i] > 10:`, set `found`, then `break`; always increment `i`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops6"
+path = "exercises/loops/loops6.py"
+hint = "Inside the loop, `if num % 2 != 0: continue` skips odds; then `evens.append(num)` collects evens."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops7"
+path = "exercises/loops/loops7.py"
+hint = "Outer loop `for i in range(1, 4)`, inner loop `for j in range(1, 4)`, build each row then append it to table."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops8"
+path = "exercises/loops/loops8.py"
+hint = "Use `for i, word in enumerate(words, start=1):` and append `f\"{i}: {word}\"` to labeled."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops9"
+path = "exercises/loops/loops9.py"
+hint = "Use `for name, score in scores.items():` and update top_name/top_score whenever score > top_score."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "loops10"
+path = "exercises/loops/loops10.py"
+hint = "Use `for i, tx in enumerate(transactions, start=1):`, skip zero-amounts with `continue`, update balance, and append the summary dict."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+
+[[exercises]]
+name = "functions1"
+path = "exercises/functions/functions1.py"
+hint = "The function is called as average(2, 4) — give it two parameters."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions2"
+path = "exercises/functions/functions2.py"
+hint = "Use `def greet():` with no parameters and `return \"hello\"`, then set `message = greet()`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions3"
+path = "exercises/functions/functions3.py"
+hint = "Add a parameter name (e.g. `n`) inside the parentheses of `def double()`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions4"
+path = "exercises/functions/functions4.py"
+hint = "Add the `return` keyword before `n * n` so the function hands a value back to the caller."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions5"
+path = "exercises/functions/functions5.py"
+hint = "Give `greeting` a default value in the signature: `def make_greeting(name, greeting=\"Hello\"):`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions6"
+path = "exercises/functions/functions6.py"
+hint = "Use keyword arguments to fix the call order: `describe_pet(name=\"Buddy\", animal_type=\"dog\")`."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions7"
+path = "exercises/functions/functions7.py"
+hint = "Replace `pass` with `return sum(args)` — `args` is a tuple of all positional arguments."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions8"
+path = "exercises/functions/functions8.py"
+hint = "Replace `pass` with `return dict(kwargs)` — `kwargs` is already a dict of the keyword arguments."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions9"
+path = "exercises/functions/functions9.py"
+hint = "Unpack the returned tuple with `lo, hi = min_max(numbers)` instead of assigning the whole tuple to both variables."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "functions10"
+path = "exercises/functions/functions10.py"
+hint = "Inside `is_palindrome`, compare `s.lower()` with `s.lower()[::-1]` and return the result."
+docs = "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+
+[[exercises]]
+name = "lists1"
+path = "exercises/lists/lists1.py"
+hint = "A list literal is written with square brackets: colors = [\"red\", \"green\", \"blue\"]"
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists2"
+path = "exercises/lists/lists2.py"
+hint = "Index 0 is the first element; use numbers[0] for first and numbers[2] = 99 to update."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists3"
+path = "exercises/lists/lists3.py"
+hint = "items.append(\"cherry\") adds to the end; items.insert(1, \"mango\") inserts at position 1."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists4"
+path = "exercises/lists/lists4.py"
+hint = "items.remove(\"banana\") deletes by value; last = items.pop() removes and returns the last element."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists5"
+path = "exercises/lists/lists5.py"
+hint = "Slice syntax: letters[0:3] gives the first three; letters[-2:] gives the last two; letters[2:5] gives indices 2-4."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists6"
+path = "exercises/lists/lists6.py"
+hint = "scores.sort() sorts in-place; desc = sorted(scores, reverse=True) builds a new descending list."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists7"
+path = "exercises/lists/lists7.py"
+hint = "len(fruits) counts elements; \"kiwi\" in fruits checks membership; fruits.count(\"apple\") counts occurrences."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists8"
+path = "exercises/lists/lists8.py"
+hint = "Inside the loop, compute F = temp * 9 / 5 + 32 and append it to fahrenheit."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists9"
+path = "exercises/lists/lists9.py"
+hint = "matrix[row][col] accesses a cell; row 1 col 1 is matrix[1][1], row 2 col 2 is matrix[2][2]."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "lists10"
+path = "exercises/lists/lists10.py"
+hint = "Filter with `if record[\"units\"] > 10`, compute revenue as units * price_per_unit, then sum(revenue_list)."
+docs = "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists"
+
+[[exercises]]
+name = "type_hints1"
+path = "exercises/type_hints/type_hints1.py"
+hint = "Add `: int` between the variable name and `=`: write `count: int = 0`."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints2"
+path = "exercises/type_hints/type_hints2.py"
+hint = "Add `: str` and `: int` to the parameters and `-> str` before the colon: `def greet(name: str, times: int) -> str:`."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints3"
+path = "exercises/type_hints/type_hints3.py"
+hint = "Use parameterized built-in types: `list[int]` and `dict[str, int]` as parameter annotations, and `int` as the return type."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints4"
+path = "exercises/type_hints/type_hints4.py"
+hint = "Use the union syntax `int | None` for the return type to express that the function may return an int or nothing."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints5"
+path = "exercises/type_hints/type_hints5.py"
+hint = "Fixed-length tuples are written as `tuple[T1, T2, ...]`. Annotate points as `list[tuple[float, float]]` and the return as `tuple[float, float, float, float]`."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints6"
+path = "exercises/type_hints/type_hints6.py"
+hint = "Write `Vector = list[float]` as a type alias, then use `Vector` as the annotation for `v` and the return type, and `float` for `factor`."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints7"
+path = "exercises/type_hints/type_hints7.py"
+hint = "Import `Callable` from `typing` and annotate `func` as `Callable[[int], int]` — a one-argument int-to-int function."
+docs = "https://docs.python.org/3/library/typing.html"
+
+[[exercises]]
+name = "type_hints8"
+path = "exercises/type_hints/type_hints8.py"
+hint = "Combine generics and union types: `list[dict[str, int]]`, `str`, `int | None`, and `dict[str, int | None]` for the four annotations."
+docs = "https://docs.python.org/3/library/typing.html"
+
