@@ -1,12 +1,14 @@
 # Exercise: Dictionaries 9
 # I AM NOT DONE
 #
-# A nested dict is a dict whose values are themselves dicts.
+# A value in a dictionary can be anything, even another dictionary! This
+# is a NESTED dictionary. To dig in, use one set of square brackets for each
+# level, working from the outside in:
 #
-# Given `school` below, set:
-#   `alice_grade` — Alice's grade (school["students"]["alice"]["grade"])
-#   `math_room`   — the room number for math  (school["courses"]["math"]["room"])
-#   `num_students` — the total enrollment count (school["meta"]["enrollment"])
+#     school["students"]["alice"]["grade"]
+#
+# Fill in `alice_grade`, `math_room` and `num_students` using `school`.
+# The comments in the exercise show you where each answer lives.
 
 school = {
     "students": {

@@ -1,14 +1,16 @@
 # Exercise: Exceptions 8
 # I AM NOT DONE
 #
-# Complete classify_error(func) so that it calls func() with no arguments
-# and returns a string describing what happened:
-#   - If no exception: return "ok"
-#   - If a ValueError:  return "value error"
-#   - If a TypeError:   return "type error"
-#   - If any other exception: return "other error"
+# You can have several `except` parts, one for each type of error. Python
+# checks them from the top and uses the first one that matches. A plain
+# `except Exception:` at the bottom catches any other normal error. (`Exception`
+# is the "parent" of almost all error types.)
 #
-# Use multiple except clauses — each clause catches a different exception type.
+# Finish `classify_error(func)`. It calls func() and returns:
+#     "ok"           if nothing went wrong
+#     "value error"  if a ValueError was raised
+#     "type error"   if a TypeError was raised
+#     "other error"  for any other exception
 
 def classify_error(func):
     try:

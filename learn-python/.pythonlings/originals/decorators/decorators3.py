@@ -1,12 +1,17 @@
 # Exercise: Decorators 3
 # I AM NOT DONE
 #
-# Apply the `stamp` decorator to `get_message` using the `@` syntax
-# so that calling get_message() returns "[STAMPED] hello".
+# Writing `loud_greet = shout(greet)` is a bit long-winded. Python has a
+# short-cut: write @decorator_name on the line directly above the `def`.
 #
-# The decorator is already written — you only need to add the `@` line
-# directly above the `def get_message():` line.
-
+#     @shout
+#     def greet():
+#         ...
+#
+# is exactly the same as writing  greet = shout(greet)  after the function.
+#
+# Put `@stamp` directly above `def get_message():` so calling get_message()
+# returns "[STAMPED] hello". The decorator is already written.
 
 def stamp(func):
     def wrapper():

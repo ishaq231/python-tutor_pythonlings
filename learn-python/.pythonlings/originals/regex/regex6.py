@@ -1,20 +1,16 @@
 # Exercise: Regex 6
 # I AM NOT DONE
 #
-# Use re.fullmatch (or a pattern with ^ and $) to validate that
-# `code` is exactly five uppercase letters followed by exactly three
-# digits — nothing more, nothing less.
-# Store the boolean result in `is_valid`.
+# ANCHORS pin a pattern to the start or end of the text:
+#     ^   the start of the text
+#     $   the end of the text
+# And {n} means "exactly n of the thing before it", so \d{3} is exactly three digits.
 #
-# Anchors:
-#   ^   start of string
-#   $   end of string
-#   {n} exactly n repetitions of the preceding element
-#   [A-Z] any uppercase letter
+# `re.fullmatch` is like having both anchors: the WHOLE text must match.
+# (`bool(...)` turns the match object into True or False.)
 #
-# Fix the pattern (replace ???).
-# Example valid code: "ABCDE123"
-# Example invalid: "ABCDE12" (too few digits), "abcde123" (lowercase)
+# Replace the ??? with a pattern for a valid code: exactly five capital
+# letters followed by exactly three digits, like "ABCDE123".
 
 import re
 

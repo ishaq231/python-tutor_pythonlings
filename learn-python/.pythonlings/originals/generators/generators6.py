@@ -1,13 +1,17 @@
 # Exercise: Generators 6
 # I AM NOT DONE
 #
-# `natural_numbers()` must be an infinite generator that yields 1, 2, 3, 4, ...
-# without ever stopping.
+# A generator doesn't have to ever finish! An INFINITE generator uses a loop
+# that never ends. It's safe because it only does the work when asked.
 #
-# `first_ten` should be the list [1, 2, 3, ..., 10] — take only the first 10
-# values from the infinite generator using itertools.islice.
+#     while True:
+#         yield something
 #
-# Hint: import itertools, then use itertools.islice(natural_numbers(), 10).
+# But never call list() on an infinite generator. It would run forever! Instead
+# use `itertools.islice(gen, 10)` to take just the first 10 values.
+#
+# Fix `natural_numbers()` so it yields 1, 2, 3, 4, ... forever. `first_ten`
+# is already written and takes the first 10.
 
 import itertools
 

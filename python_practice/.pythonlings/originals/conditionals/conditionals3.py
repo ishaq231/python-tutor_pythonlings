@@ -1,14 +1,15 @@
 # Exercise: Conditionals 3
 # I AM NOT DONE
 #
-# `elif` (short for "else if") lets you check lots of conditions one after the other.
-# Python checks them in order and runs the FIRST one that is True.
+# What if you have more than two choices? Use `elif` (short for "else if").
+# Python checks the conditions from the top, and runs the FIRST one that is
+# True. After that it ignores the rest, so the order matters!
 #
 # Finish `grade(score)` so it returns:
-#   "A" if score is 90 or more
-#   "B" if score is 80 or more
-#   "C" if score is 70 or more
-#   "F" for anything below 70
+#     "A" if score is 90 or more
+#     "B" if score is 80 or more
+#     "C" if score is 70 or more
+#     "F" for anything below 70
 
 def grade(score):
     if score >= 90:

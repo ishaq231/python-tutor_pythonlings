@@ -1,16 +1,15 @@
 # Exercise: Context Managers 7
 # I AM NOT DONE
 #
-# `__exit__` can suppress exceptions by returning True.  Complete
-# `SilentZeroDivision` so that any ZeroDivisionError raised inside
-# the with-block is silently swallowed (execution continues after
-# the with-block as if no exception occurred).
+# What if an error happens inside the `with` block? Python calls `__exit__` and
+# passes in details of the error. If `__exit__` returns True, the error is
+# SUPPRESSED (silenced) and the program carries on after the block. Returning
+# None means the error carries on as normal.
 #
-# * If `exc_type` is `ZeroDivisionError`, return True (suppress it).
-# * For every other exception (or no exception), return None (propagate).
+# `exc_type` is the type of the error (or None if there was no error).
 #
-# Hint: `if exc_type is ZeroDivisionError: return True`
-
+# Finish `SilentZeroDivision.__exit__` so that a ZeroDivisionError is suppressed
+# (return True), and every other error is left alone (return None).
 
 class SilentZeroDivision:
     def __enter__(self):

@@ -1,17 +1,19 @@
 # Exercise: Lists 10
 # I AM NOT DONE
 #
-# You have a list of sales records. Each record is a dictionary with
-# "product", "units" and "price_per_unit".
+# Real data is often a list of dictionaries, one for each record, like the
+# `sales` below. Reading from a record uses its key: record["units"].
 #
-# Finish the code so that:
-#   `revenue_list`  : a list of the money made for each record (units * price_per_unit),
-#                     but ONLY for records where units is more than 10
-#   `total_revenue` : all the numbers in `revenue_list` added together
+# Using what you know about loops, `if` and lists, finish the code so that:
+#     revenue_list  -> a list of the money made for each record
+#                      (units * price_per_unit), but ONLY for records where
+#                      units is more than 10
+#     total_revenue -> all the numbers in `revenue_list` added together
+#                      (the built-in sum() can do this)
 #
 # You should get:
-#   revenue_list  == [270.0, 500.0, 880.0]
-#   total_revenue == 1650.0
+#     revenue_list  == [270.0, 500.0, 880.0]
+#     total_revenue == 1650.0
 
 sales = [
     {"product": "apple",  "units": 5,  "price_per_unit": 1.20},

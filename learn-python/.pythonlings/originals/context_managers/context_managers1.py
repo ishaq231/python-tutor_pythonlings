@@ -1,12 +1,16 @@
 # Exercise: Context Managers 1
 # I AM NOT DONE
 #
-# Use a `with` statement to open `data_path` for writing and write the
-# text "hello, context!" to it.  The with-block should handle opening
-# and closing automatically — do NOT call .close() yourself.
+# You have already met the `with` statement in File I/O. It's a safety net
+# that makes sure something is tidied up (like closing a file) even if
+# an error happens. Anything that works with `with` is called a CONTEXT MANAGER.
 #
-# Hint: `with open(path, "w") as f:` opens the file; call `f.write(text)`
-# inside the block.
+#     with open(path, "w") as f:
+#         f.write("hi")
+#     # the file is closed automatically here
+#
+# Rewrite the code below using a `with` statement to open `data_path` for
+# writing and write "hello, context!". Don't call .close() yourself.
 
 import tempfile
 

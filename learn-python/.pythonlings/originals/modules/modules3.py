@@ -1,13 +1,15 @@
 # Exercise: Modules 3
-# --------------------
 # I AM NOT DONE
 #
-# Import the `math` module with the alias `m` using `import ... as ...`,
-# then use that alias to call `m.pi` and `m.floor`.
+# You can give a module a shorter nickname (an ALIAS) with `as`:
 #
-# Fill in the import and complete the two expressions.
-
-# add the import here
+#     import math as m
+#     m.sqrt(25)
+#
+# Programmers do this a lot with long module names.
+#
+# Import `math` with the alias `m`, then replace the two ??? with that alias.
+# (m.pi is the number pi, and m.floor(x) rounds x DOWN to a whole number.)
 
 circle_area = ???.pi * 5 ** 2   # area of a circle with radius 5
 floored = ???.floor(7.9)        # floor of 7.9

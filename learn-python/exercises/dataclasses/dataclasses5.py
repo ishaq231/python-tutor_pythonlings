@@ -1,14 +1,11 @@
 # Exercise: Dataclasses 5
 # I AM NOT DONE
 #
-# `@dataclass` generates `__init__` automatically from the field
-# declarations — you must NOT write your own `__init__`.
+# A dataclass creates `__init__` for you, so you should NOT write your own. Just
+# declare the fields and delete the hand-written __init__.
 #
-# Fix `Vector3` by removing the hand-written `__init__` and instead
-# declaring three typed fields `x`, `y`, `z` (all `float`).
-# The generated __init__ will accept them as positional arguments.
-#
-# Hint: just add the field declarations and delete the `__init__` method.
+# Fix `Vector3`: remove the __init__ method and declare three float fields
+# named x, y and z instead.
 
 from dataclasses import dataclass
 

@@ -1,15 +1,17 @@
 # Exercise: Dictionaries 6
 # I AM NOT DONE
 #
-# `.get(key, default)` returns the value for a key if it exists,
-# or the default if the key is missing — without raising a KeyError.
+# If you look up a key that isn't there, you get a KeyError. The method
+# .get(key, default) is a safer way: it gives back the value if the key is
+# there, or your `default` if it isn't. No error!
 #
-# Given `config` below:
-#   `timeout`  — get "timeout" with a default of 30
-#   `retries`  — get "retries" with a default of 3
-#   `verbose`  — get "verbose" with a default of False
+#     d.get("colour", "unknown")
 #
-# "timeout" exists in config, "retries" and "verbose" do not.
+# Using `config`, set:
+#     timeout -> get "timeout", with a default of 30
+#     retries -> get "retries", with a default of 3
+#     verbose -> get "verbose", with a default of False
+# ("timeout" is in config. "retries" and "verbose" aren't.)
 
 config = {"host": "localhost", "port": 8080, "timeout": 60}
 

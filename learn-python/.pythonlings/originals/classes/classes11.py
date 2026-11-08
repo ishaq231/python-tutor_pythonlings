@@ -1,17 +1,19 @@
 # Exercise: Classes 11
 # I AM NOT DONE
 #
-# Add a class method `from_string` to Temperature that parses a string
-# like "36.6C" and returns a new Temperature instance with the numeric
-# value. For example, Temperature.from_string("100C") should return
-# Temperature(100.0).
+# A CLASS METHOD belongs to the class itself rather than to one instance. It
+# gets `cls` (the class) instead of `self`. Its decorator is written on the line
+# above with an @ sign. (You will learn more about @ decorators in a later topic.)
 #
-# The method signature is:
-#   @classmethod
-#   def from_string(cls, s):
-#       ...
+# A classic use is an "alternative way to make an object":
 #
-# Hint: float(s[:-1]) strips the trailing "C" and converts to float.
+#     @classmethod
+#     def from_string(cls, s):
+#         return cls(...)       <- cls(...) makes a new instance
+#
+# Add a `from_string` class method to Temperature. It reads text like "36.6C"
+# and returns a new Temperature with the number. Hint: s[:-1] is the text
+# without its last character, and float() makes it a decimal number.
 
 class Temperature:
     def __init__(self, degrees):

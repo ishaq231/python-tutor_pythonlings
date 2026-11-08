@@ -1,15 +1,22 @@
 # Exercise: Exceptions 1
 # I AM NOT DONE
 #
-# Complete safe_divide(a, b) so that dividing by zero is caught and
-# the function returns the string "error" instead of crashing.
-# A normal division should return the numeric result.
+# Sometimes things go wrong while a program runs, and Python raises an
+# EXCEPTION, which is another word for an error. For example, 5 / 0 raises a
+# ZeroDivisionError and the program crashes.
 #
-# Wrap the body in a try/except block:
-#   try:
-#       ...
-#   except ZeroDivisionError:
-#       ...
+# You can catch errors and handle them with try / except:
+#
+#     try:
+#         ...code that might go wrong...
+#     except ZeroDivisionError:
+#         ...what to do instead...
+#
+# Python runs the `try` part. If the named error happens, it jumps to the
+# `except` part instead of crashing.
+#
+# Finish `safe_divide(a, b)` so that dividing by zero returns the string
+# "error". A normal division should return the answer as usual.
 
 def safe_divide(a, b):
     return a / b

@@ -1,16 +1,16 @@
 # Exercise: Conditionals 10
 # I AM NOT DONE
 #
-# Putting it all together: classify a number using several conditions.
+# Time to put it all together! Use an if / elif / elif / elif / else chain
+# to sort a number into a group. Remember that Python checks from the top and
+# stops at the first True, so think about the order of your questions.
 #
-# Complete `classify(n)` so it returns:
-#   "large positive"   when n > 100
-#   "small positive"   when n > 0  (and not > 100)
-#   "zero"             when n == 0
-#   "small negative"   when n >= -100  (and not 0 or positive)
-#   "large negative"   when n < -100
-#
-# Use an if / elif / elif / elif / else chain.
+# Finish `classify(n)` so it returns:
+#     "large positive"   when n is more than 100
+#     "small positive"   when n is more than 0 (but not more than 100)
+#     "zero"             when n is 0
+#     "small negative"   when n is -100 or more (but below 0)
+#     "large negative"   when n is less than -100
 
 def classify(n):
     if ???:

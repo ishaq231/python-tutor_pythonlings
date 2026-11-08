@@ -1,17 +1,17 @@
 # Exercise: Modules 8
-# --------------------
 # I AM NOT DONE
 #
-# Combine multiple stdlib imports to solve a small task:
+# Time to combine several modules! You'll make some random data and then work
+# out facts about it.
 #
 # 1. Import `math` and `statistics`.
-# 2. Use `random` (already imported below) — seed it with 0, then generate
-#    a list of 10 random integers between 1 and 100 (inclusive) called `data`.
-# 3. Compute `data_mean` as the mean of `data` using `statistics.mean`.
-# 4. Compute `data_max_sqrt` as the square root of the maximum element of
-#    `data` using `math.sqrt(max(data))`.
-#
-# Seeding with 0 makes results deterministic so the check can verify them.
+# 2. `random` is already imported and seeded with 0. Make `data`, a list of
+#    10 random whole numbers from 1 to 100 (use random.randint(1, 100) 10
+#    times, e.g. in a list comprehension: [... for _ in range(10)]. The `_` is
+#    a name that means "I don't need this variable".)
+# 3. `data_mean` is the average of `data`, using statistics.mean(data).
+# 4. `data_max_sqrt` is the square root of the biggest number in `data`,
+#    using math.sqrt(max(data)).
 
 import random
 

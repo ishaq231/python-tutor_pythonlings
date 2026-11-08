@@ -1,13 +1,17 @@
 # Exercise: Lists 5
 # I AM NOT DONE
 #
-# Given `letters = ["a", "b", "c", "d", "e", "f"]`, use slicing to
-# create three new lists:
-#   `first_three` — the first three elements: ["a", "b", "c"]
-#   `last_two`    — the last two elements:    ["e", "f"]
-#   `middle`      — elements at index 2 through 4 (inclusive): ["c", "d", "e"]
+# Slicing works on lists in exactly the same way as on strings:
+#     list[start:stop]    begins AT start and stops just BEFORE stop.
+# Leave a number out and it goes to the end: list[:3] is the first three
+# items, and list[2:] is everything from position 2 onwards. Negative numbers
+# count from the back: list[-2:] is the last two.
 #
-# Use slice notation (no loops, no indexing one element at a time).
+# From letters = ["a", "b", "c", "d", "e", "f"], use slices to make:
+#     first_three -> ["a", "b", "c"]
+#     last_two    -> ["e", "f"]
+#     middle      -> ["c", "d", "e"]   (positions 2 to 4)
+# Don't use loops. Replace each ??? with a slice such as 1:3
 
 letters = ["a", "b", "c", "d", "e", "f"]
 

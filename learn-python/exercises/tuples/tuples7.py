@@ -1,10 +1,13 @@
 # Exercise: Tuples 7
 # I AM NOT DONE
 #
-# Swap the values of `a` and `b` using Python's tuple swap idiom —
-# a single assignment statement with no temporary variable.
+# Remember swapping from the Variables exercises? It is the same trick with tuples:
 #
-# After the swap: a should be 99, b should be 7.
+#     a, b = b, a
+#
+# The code below tries to swap with two separate lines, but it doesn't
+# work. After `a = b`, a has already lost its old value, so both end up
+# as 99! Replace those two lines with one line so that a is 99 and b is 7.
 
 a = 7
 b = 99

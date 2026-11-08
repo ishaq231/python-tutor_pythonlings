@@ -1,10 +1,13 @@
 # Exercise: Modules 2
-# --------------------
 # I AM NOT DONE
 #
-# Use a `from ... import ...` statement to import `sqrt` from the
-# `math` module directly, so the call below works without a `math.` prefix.
-
-# add the import here
+# Typing `math.` every time can get long. With `from ... import ...` you
+# bring just the bits you want straight into your program, and then use them
+# without the module name in front:
+#
+#     from math import sqrt
+#     sqrt(25)
+#
+# Add a line that imports `sqrt` from `math`, so the last line works.
 
 root = sqrt(81)

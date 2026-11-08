@@ -1,7 +1,12 @@
 # Exercise: Enums 3
 # I AM NOT DONE
 #
-# Goal: Read an enum member's name and value.
+# Each enum member has two useful attributes:
+#     .name    its name as a string, e.g. "HIGH"
+#     .value   the value you gave it, e.g. 5
+#
+# Replace the ??? so `selected_name` and `selected_value` are the name and
+# value of `selected`.
 
 from enum import Enum
 

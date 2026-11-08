@@ -1,12 +1,11 @@
 # Exercise: Generators 3
 # I AM NOT DONE
 #
-# `evens_up_to(n)` should be a generator that yields every even number
-# from 2 up to and including n (if n is even), e.g. evens_up_to(8) → 2 4 6 8.
+# A generator can decide what to hand out. Put the `yield` inside an `if` and
+# only the values that pass the test come out. Also, a `for` loop can run over a
+# generator directly, taking each value one by one.
 #
-# Use a for loop over range and yield only the even numbers.
-# The collected list is built by iterating the generator with a for loop.
-
+# Finish `evens_up_to(n)` so it yields only the even numbers from 2 up to n.
 
 def evens_up_to(n):
     for i in range(1, n + 1):

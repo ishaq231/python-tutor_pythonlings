@@ -1,7 +1,13 @@
 # Exercise: Async 6
 # I AM NOT DONE
 #
-# Goal: Consume an async generator with async for.
+# An ASYNC GENERATOR is like a normal generator (it uses `yield`), but it's
+# inside an `async def`. To loop over one, you write `async for`:
+#
+#     async for item in some_async_generator():
+#         ...
+#
+# Replace the ??? so each value is added to the `result` list.
 
 async def numbers():
     for value in [1, 2, 3]:

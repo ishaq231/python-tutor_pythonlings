@@ -1,19 +1,15 @@
 # Exercise: Testing 7
 # I AM NOT DONE
 #
-# Beyond checking that an exception is raised, you often need to verify
-# its *message*. Capture the exception with `as e` and inspect `str(e)`:
+# You can also check the MESSAGE of an error. Catch it with `as e`, and use
+# `str(e)` to get the message text:
 #
-#   try:
-#       risky()
-#       assert False, "expected ValueError"
-#   except ValueError as e:
-#       assert "some text" in str(e), f"unexpected message: {e}"
+#     except ValueError as e:
+#         assert "some words" in str(e)
 #
-# Complete `test_divide_message` so it:
-#   1. Asserts divide(10, 2) == 5.0
-#   2. Catches the ValueError raised by divide(5, 0) and asserts
-#      the message contains "zero"
+# Finish `test_divide_message` with two checks:
+#     1. divide(10, 2) == 5.0
+#     2. divide(5, 0) raises a ValueError whose message contains "zero"
 
 def divide(a, b):
     if b == 0:

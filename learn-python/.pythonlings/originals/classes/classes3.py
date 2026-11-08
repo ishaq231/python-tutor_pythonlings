@@ -1,8 +1,11 @@
 # Exercise: Classes 3
 # I AM NOT DONE
 #
-# The Point class should store both `x` and `y` as instance attributes
-# in its __init__. Right now only `x` is stored. Add `self.y = y`.
+# An object can have as many attributes as you like, each one stored with
+# `self.something = ...` inside __init__.
+#
+# The Point class should store both `x` and `y`. At the moment only `x` is
+# stored. Add the line that stores `y`.
 
 class Point:
     def __init__(self, x, y):

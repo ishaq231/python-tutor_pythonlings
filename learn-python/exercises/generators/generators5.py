@@ -1,14 +1,13 @@
 # Exercise: Generators 5
 # I AM NOT DONE
 #
-# Use `next()` to pull individual values from a generator one at a time.
+# `next(gen)` asks a generator for its next value, one at a time. Each call
+# carries on from where the last stopped. When there are no more values left,
+# Python raises a StopIteration error to say it's finished. (A `for` loop
+# handles that quietly for you.)
 #
-# `letters` is a generator that yields 'a', 'b', 'c'.
-# Pull the first value into `first`, the second into `second`, and
-# the third into `third` — each with a separate call to next().
-#
-# Do NOT convert the whole generator to a list.
-
+# `letters` yields "a", "b", "c". Replace each `None` with a next(gen) call to
+# get the first, second and third values. Don't turn the whole thing into a list.
 
 def letters():
     yield "a"

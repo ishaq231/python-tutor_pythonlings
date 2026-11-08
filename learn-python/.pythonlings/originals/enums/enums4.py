@@ -1,7 +1,13 @@
 # Exercise: Enums 4
 # I AM NOT DONE
 #
-# Goal: Iterate over an enum to collect its values.
+# You can loop over an enum to get every member, in the order they were
+# written. Use a comprehension to collect each member's value.
+#
+#     [m.value for m in Light]
+#
+# Replace the ??? so that `size_codes` is the list of all the Size values:
+# ["S", "M", "L"].
 
 from enum import Enum
 

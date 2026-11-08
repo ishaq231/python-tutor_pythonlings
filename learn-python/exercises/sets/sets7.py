@@ -1,14 +1,15 @@
 # Exercise: Sets 7
 # I AM NOT DONE
 #
-# Remove duplicates from a list by converting it to a set.
+# Because a set can't have repeats, converting a list to a set is the quickest
+# way to remove duplicates:
 #
-# Given `numbers` (a list with repeated values), create `unique` — a set
-# containing exactly the distinct values from `numbers`.
+#     set([1, 1, 2])     gives   {1, 2}
 #
-# Then create `unique_count` — the number of unique values (an int).
+# len() tells you how many items a set has, just like with a list.
 #
-# Expected: unique == {1, 2, 3, 4, 5} and unique_count == 5
+# Make `unique`, a set with just the different values from `numbers`, and
+# `unique_count`, how many different values there are.
 
 numbers = [1, 2, 3, 2, 4, 1, 5, 3, 2, 4]
 

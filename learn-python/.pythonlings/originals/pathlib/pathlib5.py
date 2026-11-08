@@ -1,7 +1,11 @@
 # Exercise: Pathlib 5
 # I AM NOT DONE
 #
-# Goal: Build a sibling path with a different file name.
+# `.with_name("new.txt")` gives a new path in the same folder but with a
+# different file name. The original is never changed.
+#
+# Replace the ??? so that `final` is "reports/final.txt", using `original`
+# and .with_name().
 
 from pathlib import Path
 

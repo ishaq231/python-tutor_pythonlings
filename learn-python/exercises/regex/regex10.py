@@ -1,25 +1,16 @@
 # Exercise: Regex 10
 # I AM NOT DONE
 #
-# Parse a structured log line and extract three fields:
-#   level    — the log level word (e.g. "ERROR", "INFO", "WARNING")
-#   logger   — the logger name (word characters only, e.g. "db.engine")
-#   message  — everything after the colon+space at the end
+# Let's put it all together by parsing a log line:
 #
-# Log line format:
-#   [LEVEL] logger_name: message text here
+#     [ERROR] db.engine: connection refused
 #
-# Example:
-#   "[ERROR] db.engine: connection refused"
-#   → level="ERROR", logger="db.engine", message="connection refused"
-#
-# Use re.search with named capturing groups (?P<name>...).
-# Fix the pattern (replace ???).
-#
-# Hints:
-#   \[  and  \]   match literal square brackets
-#   [\w.]+        matches word chars and dots (for dotted logger names)
-#   .+            matches the rest of the line (message)
+# Write a pattern with three named groups: `level`, `logger` and `message`.
+# Some building blocks you will need:
+#     \[ and \]   match real square brackets
+#     [\w.]+      letters, digits, underscores or dots (for the logger name)
+#     .+          anything at all, to the end of the line (for the message)
+# Everything else in the pattern, like the colon and the space, matches itself.
 
 import re
 

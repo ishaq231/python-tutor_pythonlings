@@ -1,14 +1,13 @@
 # Exercise: File IO 7
 # I AM NOT DONE
 #
-# You have a list of strings called `words`.
-# Write them to `words_path` so that each word appears on its own line.
-# The file should contain exactly:
-#   "alpha\nbeta\ngamma\n"
+# .write() puts exactly what you give it into the file, and doesn't add a
+# new line for you. To get each word on its own line, YOU must add the "\n"
+# at the end of every word.
 #
-# Hint: fh.writelines(iterable) writes each item without adding newlines,
-# so you need to ensure each string ends with "\n" before passing them in.
-# Alternatively, use a loop: for w in words: fh.write(w + "\n")
+# Write the words so the file contains exactly "alpha\nbeta\ngamma\n".
+# Fix the line so every word ends with "\n". A loop with fh.write(w + "\n")
+# works well.
 
 import tempfile
 

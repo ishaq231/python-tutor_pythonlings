@@ -1,11 +1,19 @@
 # Exercise: Variables 8
 # I AM NOT DONE
 #
-# Use type() to inspect a value and type-conversion functions to create new values:
-#   - `kind` should be the type of 3.14 (i.e. type(3.14))
-#   - `as_int` should be 3.14 converted to an int using int()
-#   - `as_str` should be 42 converted to a string using str()
-# Replace each ??? with the correct expression.
+# Sometimes you need to know what type something is, or turn it into a
+# different type (this is called "converting" or "casting"):
+#
+#     type(5)       tells you the type of 5  (it is an int)
+#     int(2.9)      turns it into a whole number -> 2  (it chops off the
+#                   decimal part, it does NOT round)
+#     str(42)       turns it into text           -> "42"
+#     float(3)      turns it into a decimal      -> 3.0
+#
+# Replace each ??? with the right code:
+#     kind   -> the type of 3.14
+#     as_int -> 3.14 changed into a whole number
+#     as_str -> 42 changed into a string
 
 kind = ???
 as_int = ???

@@ -1,14 +1,19 @@
 # Exercise: Loops 10
 # I AM NOT DONE
 #
-# Combine looping techniques to process `transactions`.
-# Each transaction is a dict with keys "amount" (int) and "type" ("credit" or "debit").
-# Build `summary` as a list of dicts, one per transaction, with keys:
-#   "index"   : 1-based position (use enumerate)
-#   "amount"  : the original amount
-#   "balance" : running balance so far (credits add, debits subtract)
-# Skip any transaction whose amount is 0 (use continue).
-# Starting balance is 0.
+# Time to use all your loop skills together! You are going through a list of
+# bank `transactions`. Each one is a dictionary, and you read a value from it
+# using its key in square brackets, like  transaction["amount"].
+#
+# Each has an "amount" (a number) and a "type": "credit" means money going in
+# and "debit" means money coming out.
+#
+# Make `summary`, a list of dictionaries (one for each transaction) with:
+#     "index"   -> the position counting from 1 (use enumerate)
+#     "amount"  -> the amount of the transaction
+#     "balance" -> the money there is so far (credits add on, debits take away)
+# Skip any transaction with an amount of 0 (use continue). The balance starts
+# at 0. A new dictionary looks like {"index": 1, "amount": 100, "balance": 100}.
 
 transactions = [
     {"amount": 100, "type": "credit"},

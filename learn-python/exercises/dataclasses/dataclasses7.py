@@ -1,13 +1,14 @@
 # Exercise: Dataclasses 7
 # I AM NOT DONE
 #
-# A frozen dataclass is immutable: assigning to any field after
-# construction raises a `FrozenInstanceError`.
+# A FROZEN dataclass can't be changed after it's created: trying to change a
+# field raises an error. This is useful for settings you don't want changed by
+# accident. Put `frozen=True` in the brackets of the decorator:
 #
-# Fix `Config` by adding `frozen=True` to the `@dataclass` decorator.
-# Fields: `host: str` and `port: int`.
+#     @dataclass(frozen=True)
 #
-# Hint: @dataclass(frozen=True)
+# Fix `Config` so changing `cfg.port` raises an error. The `try`/`except` at
+# the bottom checks that for you.
 
 from dataclasses import dataclass
 

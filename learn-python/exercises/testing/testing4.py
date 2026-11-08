@@ -1,14 +1,12 @@
 # Exercise: Testing 4
 # I AM NOT DONE
 #
-# A test function can (and usually should) contain *multiple* assertions —
-# one for each behaviour you want to verify.
+# One test function can hold several asserts, one for each behaviour you want
+# to check. If any one fails, the whole test fails.
 #
-# Complete `test_is_even` so it asserts ALL of the following:
-#   is_even(0)  is True
-#   is_even(2)  is True
-#   is_even(7)  is False
-#   is_even(-4) is True
+# Finish `test_is_even` with four asserts. For the True answers you can write
+# `assert is_even(2)`. For the False one, use `assert not is_even(7)`.
+#     is_even(0), is_even(2) and is_even(-4) are True, is_even(7) is False
 
 def is_even(n):
     return n % 2 == 0

@@ -1,15 +1,14 @@
 # Exercise: Dataclasses 6
 # I AM NOT DONE
 #
-# `@dataclass` generates `__repr__` and `__eq__` automatically.
+# A dataclass also writes two more special methods for you:
+#     __repr__   shows the field values in a readable way, e.g. Book(title='Dune', pages=412)
+#     __eq__     lets `==` compare two objects by comparing their fields
 #
-# Fix `Book` so that:
-#   * Two Book instances with the same `title` and `pages` compare equal
-#     (the generated `__eq__` does this for you).
-#   * `repr(book)` contains both the title and page count.
+# A plain class would say two Books with the same title are different objects.
+# A dataclass says they're equal.
 #
-# Right now `Book` is a plain class — add `@dataclass` and the two
-# typed field declarations `title: str` and `pages: int`.
+# Turn `Book` into a dataclass with a `title: str` and a `pages: int` field.
 
 # Bug: missing @dataclass decorator and field declarations.
 class Book:

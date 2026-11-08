@@ -1,16 +1,20 @@
 # Exercise: Context Managers 6
 # I AM NOT DONE
 #
-# `contextlib.contextmanager` turns a generator function into a context
-# manager.  Write the body of `managed_counter` so it:
-#   1. Creates a list `counter = []` before the yield.
-#   2. Yields `counter` (the `as` target gets this list).
-#   3. Appends the string "finished" to `counter` after the yield.
+# Writing a whole class is a lot of work. The `contextmanager` decorator (the
+# @ line above the function) lets you write a context manager as a single
+# generator function with ONE `yield`:
 #
-# The `@contextmanager` decorator and the function signature are already
-# provided.  Only fill in the body.
+#     @contextmanager
+#     def thing():
+#         ...setup (this is like __enter__)...
+#         yield value       <- the value that `as` receives
+#         ...clean-up (this is like __exit__)...
 #
-# Hint: everything before `yield` is __enter__; everything after is __exit__.
+# Fill in the body of `managed_counter`:
+#     1. make an empty list called `counter`
+#     2. yield `counter`
+#     3. after the yield, append the string "finished" to `counter`
 
 from contextlib import contextmanager
 

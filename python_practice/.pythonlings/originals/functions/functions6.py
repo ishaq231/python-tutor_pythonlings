@@ -1,13 +1,15 @@
 # Exercise: Functions 6
 # I AM NOT DONE
 #
-# The function `describe_pet` takes a `name` and an `animal_type`.
-# It returns "My <animal_type> is named <name>."
+# So far you gave arguments in order (this is called by POSITION). You can also
+# give them by NAME, which are called KEYWORD arguments. Then the order
+# doesn't matter, and it's easier to read:
 #
-# The call at the bottom has the arguments in the wrong order.
-# Fix it by using keyword arguments (like name="Buddy") so it works
-# whatever order you write them in.
-# Save the answer in `description`.
+#     describe_pet(animal_type="dog", name="Buddy")
+#
+# The call at the bottom has its arguments in the wrong order, so the answer
+# comes out silly. Fix it using keyword arguments, and save the result in
+# `description`.
 
 def describe_pet(name, animal_type):
     return f"My {animal_type} is named {name}."

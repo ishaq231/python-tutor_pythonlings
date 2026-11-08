@@ -1,7 +1,12 @@
 # Exercise: Async 10
 # I AM NOT DONE
 #
-# Goal: Build a small async pipeline that fetches names and joins them.
+# Putting it together: make one coroutine call for each name, run them all with
+# gather (remember the * trick from the last exercise), then join the
+# results into one string.
+#
+# Replace the ??? so that `upper_names` is the list of the results of
+# fetch_name() for every name in `names`.
 
 import asyncio
 

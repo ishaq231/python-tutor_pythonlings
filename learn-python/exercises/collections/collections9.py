@@ -1,15 +1,15 @@
 # Exercise: Collections 9
-# -----------------------
 # I AM NOT DONE
 #
-# Counter supports arithmetic:
-#   c1 + c2  — adds counts element-wise
-#   c1 - c2  — subtracts counts, dropping non-positive results
+# Counters can do maths! Adding two counters adds up the counts of each item.
+# Subtracting takes the counts away, and drops anything that falls to zero or
+# below.
 #
-# Two inventory snapshots are given.
-# 1. Store in `combined`  the element-wise sum  of `monday` and `tuesday`.
-# 2. Store in `remainder` the result of subtracting `sold` from `combined`.
-#    (Only items with a positive remaining count are kept.)
+#     Counter(a=2) + Counter(a=1, b=1)     gives   Counter({"a": 3, "b": 1})
+#
+# Two days of shop stock are given.
+# 1. `combined` is `monday` plus `tuesday`.
+# 2. `remainder` is `combined` minus `sold`.
 
 from collections import Counter
 

@@ -1,19 +1,16 @@
 # Exercise: Recursion 8
-# ---------------------
 # I AM NOT DONE
 #
-# A tree is represented as a dict with keys "value" (int) and
-# "children" (list of trees, possibly empty).
+# Recursion works brilliantly on TREES. A tree is made up of smaller trees. Here
+# each tree is a dictionary with a "value" and a list of "children", which are
+# trees too. Real examples: family trees and the folders on your computer.
 #
-# Complete two functions:
-#
-#   tree_depth(tree) — returns the depth of the tree.  A tree with no
-#     children has depth 1.  Otherwise depth is 1 + max depth of children.
-#
-#   tree_search(tree, target) — returns True if `target` appears as a
-#     "value" anywhere in the tree, False otherwise.
-#
-# Both must be recursive.
+# Fill in the two ???:
+#     tree_depth: a tree with no children has depth 1. Otherwise its depth is 1
+#                 plus the biggest depth among its children.
+#                 (max() of a list of the children's depths.)
+#     tree_search: is the target the value here OR anywhere in a child?
+#                  (any() is True if at least one item is True.)
 
 def tree_depth(tree):
     if not tree["children"]:

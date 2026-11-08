@@ -1,16 +1,21 @@
 # Exercise: Type Hints 7
 # I AM NOT DONE
 #
-# Annotate the function `apply_twice` using `Callable` from `typing`:
-#   - parameter `func` should be annotated as `Callable[[int], int]`
-#     (a function that takes one int and returns an int)
-#   - parameter `value` should be annotated as `int`
-#   - the return type should be `int`
+# In Python, a function can be passed into another function, just like a
+# number or a string! The type hint for "a function" is `Callable`, and it
+# says what goes in and what comes out:
 #
-# Remember to import `Callable` from `typing`.
+#     Callable[[int], int]     a function that takes one int and returns an int
 #
-# The signature should read:
-#   def apply_twice(func: Callable[[int], int], value: int) -> int:
+# (The inner square brackets hold the list of inputs, then comes the output.)
+#
+# Add type hints to `apply_twice`:
+#     func is a Callable[[int], int],  value is an int,  and it returns an int
+#
+# It should look like:
+#     def apply_twice(func: Callable[[int], int], value: int) -> int:
+#
+# The import for `Callable` is already written for you.
 
 from typing import Callable
 

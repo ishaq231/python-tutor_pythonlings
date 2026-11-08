@@ -1,12 +1,12 @@
 # Exercise: Conditionals 6
 # I AM NOT DONE
 #
-# `not` flips a boolean: `not True` is False, `not False` is True.
-# It is useful when you want to act on the absence of something.
+# `not` flips a boolean around: `not True` is False and `not False` is True.
+# It's handy when you want to check that something is NOT the case.
 #
-# Complete `is_closed(is_open)` so it returns True when the shop is NOT open.
-# Complete `neither_zero(a, b)` so it returns True when NEITHER a nor b is 0.
-# Hint: use `not` in both functions.
+# Finish `is_closed(is_open)` so it returns True when the shop is NOT open.
+# Finish `neither_zero(a, b)` so it returns True when NEITHER a nor b is 0.
+# Hint: use `not` in both. (For the second one, think about `a == 0`.)
 
 def is_closed(is_open):
     return ???

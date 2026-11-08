@@ -1,14 +1,14 @@
 # Exercise: Testing 11
 # I AM NOT DONE
 #
-# Testing a class means: construct an instance, call its methods, and
-# assert the resulting state is correct.
+# Testing a class: make an instance, call its methods, and assert that its
+# attributes have the right values after each step.
 #
-# Complete `test_counter` to verify the Counter class:
-#   1. A new Counter starts at 0.
-#   2. After calling increment() once, value is 1.
-#   3. After calling increment() again, value is 2.
-#   4. After calling reset(), value is back to 0.
+# Finish `test_counter` so it:
+#     1. creates a Counter and asserts its value is 0
+#     2. calls increment() and asserts the value is 1
+#     3. calls increment() again and asserts the value is 2
+#     4. calls reset() and asserts the value is 0
 
 class Counter:
     def __init__(self):

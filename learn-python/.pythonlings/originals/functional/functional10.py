@@ -1,14 +1,15 @@
 # Exercise: Functional 10
 # I AM NOT DONE
 #
-# Build a small data-processing pipeline using map, filter, and reduce.
+# Now chain them together into a pipeline: the output of one step becomes
+# the input of the next.
 #
-# Given a list of raw scores (integers), compute `result` as follows:
-#   Step 1 — map:    multiply every score by 2  (use map + lambda)
-#   Step 2 — filter: keep only scores > 10      (use filter + lambda)
-#   Step 3 — reduce: sum the remaining scores   (use reduce + lambda)
+#     Step 1, map:     double every score
+#     Step 2, filter:  keep only the doubled scores that are bigger than 10
+#     Step 3, reduce:  add up what is left
 #
-# Replace each ??? with the correct lambda.
+# Replace each ??? with the right lambda. Remember reduce's lambda takes TWO
+# values (a running total and the next item).
 
 from functools import reduce
 

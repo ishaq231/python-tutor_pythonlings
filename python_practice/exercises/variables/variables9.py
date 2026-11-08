@@ -1,10 +1,14 @@
 # Exercise: Variables 9
 # I AM NOT DONE
 #
-# Make a constant called TAX_RATE that equals 0.2 (that's 20%).
-# Constants are written in ALL CAPITAL LETTERS.
-# Then work out `total_price`, which is the price after tax: price * (1 + TAX_RATE).
-# Replace the ??? with the right values or code.
+# Some values never change, like the number of days in a week. Programmers
+# call these CONSTANTS and write their names in ALL CAPITAL LETTERS, so that
+# everybody knows "don't change this one".
+#
+# Make a constant called TAX_RATE that equals 0.2 (that is 20%).
+# Then work out `total_price`, the price after tax is added:
+#     price * (1 + TAX_RATE)
+# Replace each ??? with the right value or code.
 
 TAX_RATE = ???
 price = 50

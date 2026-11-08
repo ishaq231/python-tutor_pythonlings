@@ -1,7 +1,12 @@
 # Exercise: Itertools 8
 # I AM NOT DONE
 #
-# Goal: Flatten batches, then collect every pair of adjacent flattened values.
+# `pairwise(items)` gives every pair of neighbours: for [1, 2, 3] you get
+# (1, 2) and (2, 3). It's great for comparing each item with the next one.
+#
+# The first part (flattening the batches) is already done for you, with a
+# comprehension like the ones you wrote earlier. Replace the ??? so that
+# `adjacent_pairs` holds all the neighbouring pairs of `flattened`.
 
 try:
     from itertools import pairwise

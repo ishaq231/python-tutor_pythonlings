@@ -1,10 +1,16 @@
 # Exercise: Functional 8
 # I AM NOT DONE
 #
-# Use `functools.reduce` to compute the PRODUCT of all numbers in `numbers`.
-# `reduce(func, iterable)` applies `func` cumulatively:
-#   reduce(f, [a, b, c]) → f(f(a, b), c)
-# Replace ??? with a lambda that multiplies two numbers together.
+# `reduce(function, collection)` squashes a whole collection down to ONE
+# value by combining items two at a time, from left to right:
+#
+#     reduce(f, [a, b, c])   is   f(f(a, b), c)
+#
+# You need to import it first (it's already done for you). For example
+# reduce(lambda a, b: a + b, [1, 2, 3]) works out (1 + 2) + 3 = 6.
+#
+# Replace the ??? with a lambda that takes two numbers and multiplies them,
+# so that `product` is all of `numbers` multiplied together.
 
 from functools import reduce
 

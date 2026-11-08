@@ -1,10 +1,16 @@
 # Exercise: Loops 4
 # I AM NOT DONE
 #
-# Use a `for` loop over `numbers` to compute two accumulators:
-#   - `total`   : the sum of all numbers  (should be 55)
-#   - `product` : the product of all numbers  (should be 3628800)
-# Start `total` at 0 and `product` at 1 (the identity for multiplication).
+# A very common loop pattern is to build up an answer as you go:
+# start with a "running total", then update it for every item.
+#
+# The start value matters! For adding, start at 0 (adding 0 changes nothing).
+# For multiplying you must start at 1 - if you started at 0, every answer
+# would be 0.
+#
+# Use one `for` loop through `numbers` to work out two things:
+#     total   -> all the numbers added together (should be 55)
+#     product -> all the numbers multiplied together (should be 3628800)
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 total = 0

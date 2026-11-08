@@ -1,10 +1,14 @@
 # Exercise: Functional 5
 # I AM NOT DONE
 #
-# Sort `words` by the LENGTH of each word (shortest first).
-# Use `sorted()` with the `key=` parameter.
-# The key function receives one word and should return its length.
-# Replace ??? with a lambda that returns the length of a word.
+# `sorted()` can take a `key=` function. Python runs it on every item and
+# sorts by the answers (not by the items themselves).
+#
+#     sorted(["bb", "a", "ccc"], key=lambda w: -len(w))
+#     gives   ["ccc", "bb", "a"]
+#
+# Replace the ??? with a lambda that returns the length of a word, so
+# `by_length` is sorted from the shortest word to the longest.
 
 words = ["banana", "fig", "apple", "kiwi", "date"]
 

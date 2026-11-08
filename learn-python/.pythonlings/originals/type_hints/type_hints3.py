@@ -1,13 +1,18 @@
 # Exercise: Type Hints 3
 # I AM NOT DONE
 #
-# Annotate the function `total` to use parameterized generic types:
-#   - parameter `scores` should be annotated as `list[int]`
-#   - parameter `labels` should be annotated as `dict[str, int]`
-#   - the return type should be annotated as `int`
+# For collections like lists and dictionaries, you can say what is INSIDE them
+# using square brackets:
+#     list[int]          a list of whole numbers
+#     dict[str, int]     a dictionary with str keys and int values
 #
-# The signature should read:
-#   def total(scores: list[int], labels: dict[str, int]) -> int:
+# Add type hints to `total`:
+#     scores is a list[int]
+#     labels is a dict[str, int]
+#     the function returns an int
+#
+# It should look like:
+#     def total(scores: list[int], labels: dict[str, int]) -> int:
 
 def total(scores, labels):
     return sum(scores) + sum(labels.values())

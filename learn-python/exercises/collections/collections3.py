@@ -1,13 +1,15 @@
 # Exercise: Collections 3
-# -----------------------
 # I AM NOT DONE
 #
-# `defaultdict(int)` is handy for counting: accessing a missing key
-# automatically starts its count at 0.
+# A `defaultdict` is a dictionary that never gives a KeyError. If you look up a
+# key that doesn't exist yet, it quietly creates it with a starting value.
+# You tell it what kind of starting value to use:
 #
-# Use a `defaultdict(int)` to count how many times each character
-# appears in `text`. Store the defaultdict in `char_counts`.
-# Do NOT use Counter — iterate over the string and increment manually.
+#     counts = defaultdict(int)     <- int() is 0, so new keys start at 0
+#     counts["a"] += 1              <- no need to check if "a" exists first
+#
+# Make `char_counts` a defaultdict(int), then in the loop add 1 to the count
+# for each character `ch`. Don't use Counter this time.
 
 from collections import defaultdict
 

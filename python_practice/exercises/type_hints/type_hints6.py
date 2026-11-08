@@ -1,16 +1,18 @@
 # Exercise: Type Hints 6
 # I AM NOT DONE
 #
-# A type alias is a nickname for a long type. Make one called `Vector` that equals
-# `list[float]`, then add type hints to the function `scale`:
-#   - the parameter `v` is a `Vector`
-#   - the parameter `factor` is a `float`
-#   - the function returns a `Vector`
+# Long hints get hard to read, so you can give one a nickname. This is called
+# a TYPE ALIAS. It's just a variable that holds a type:
 #
-# Write:
-#   Vector = list[float]
+#     Names = list[str]
+#     def shout(names: Names) -> Names:
 #
-#   def scale(v: Vector, factor: float) -> Vector:
+# Make an alias `Vector` that equals `list[float]`, then add hints to `scale`:
+#     v is a Vector,  factor is a float,  and it returns a Vector
+#
+# It should look like:
+#     Vector = list[float]
+#     def scale(v: Vector, factor: float) -> Vector:
 
 def scale(v, factor):
     return [x * factor for x in v]

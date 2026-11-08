@@ -1,12 +1,14 @@
 # Exercise: Conditionals 9
 # I AM NOT DONE
 #
-# The ternary (conditional) expression lets you pick a value in one line:
+# A TERNARY is a one-line if/else. It picks between two values:
 #
-#   result = value_if_true if condition else value_if_false
+#     result = value_if_true if condition else value_if_false
 #
-# Complete `absolute(n)` so it returns n when n >= 0, and -n otherwise.
-# Write it as a single return statement using a ternary expression.
+#     status = "adult" if age >= 18 else "child"
+#
+# Finish `absolute(n)` so it returns n when n is 0 or more, and -n otherwise.
+# Write it as ONE return line using a ternary.
 
 def absolute(n):
     return ???

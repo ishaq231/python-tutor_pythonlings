@@ -1,8 +1,13 @@
 # Exercise: Tuples 4
 # I AM NOT DONE
 #
-# A single-element tuple requires a trailing comma.
-# Create a tuple called `solo` that contains only the integer 42.
-# Hint: (42) is just parentheses — you need a comma.
+# Here's a famous trap! Round brackets are also used for grouping in maths, so
+# Python thinks (42) is just the number 42 with brackets round it. What makes
+# a tuple is actually the COMMA. A tuple with one item needs a comma after it:
+#
+#     (42,)      <- a tuple with one item
+#     (42)       <- just the number 42
+#
+# Fix `solo` so that it is a tuple containing only the number 42.
 
 solo = (42)

@@ -1,18 +1,17 @@
 # Exercise: Conditionals 8
 # I AM NOT DONE
 #
-# Python has "truthiness": values can be used directly in conditions
-# without an explicit == check.
+# Python has a shortcut called TRUTHINESS. Any value can be used as a
+# condition, and Python decides whether it counts as True or False.
 #
-# Falsy values (treated as False in a condition):
-#   0, 0.0, "", [], {}, None
-# Everything else is truthy.
+# "Falsy" values (count as False):  0,  0.0,  "" (empty text),  [] (empty
+# list),  {} (empty dictionary)  and  None (which means "nothing").
+# Everything else is "truthy" and counts as True.
 #
-# Complete `describe(value)` so it returns:
-#   "empty" when value is falsy
-#   "has content" when value is truthy
+# So you can write `if name:` instead of `if name != "":`.
 #
-# Do NOT use == in your condition — use `if value` directly.
+# Finish `describe(value)` so it returns "has content" for truthy values and
+# "empty" for falsy values. Do NOT use == . Just write `if value`.
 
 def describe(value):
     if ???:

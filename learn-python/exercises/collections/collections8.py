@@ -1,14 +1,13 @@
 # Exercise: Collections 8
-# -----------------------
 # I AM NOT DONE
 #
-# A deque makes an efficient FIFO queue: enqueue with `append` (right)
-# and dequeue with `popleft` (left).
+# A queue is like a line at a shop: first in, first out (FIFO). With a deque,
+# you join the line with .append() and the person at the front leaves with
+# .popleft().
 #
-# Simulate a print queue:
-#   - Enqueue jobs "doc1", "doc2", "doc3" (in that order).
-#   - Dequeue them one by one into `first`, `second`, `third`.
-# The deque `queue` should be empty afterwards.
+# Pretend it's a printer queue. Add the jobs "doc1", "doc2" and "doc3" to
+# `queue` in that order. Then take them off the front one by one into `first`,
+# `second` and `third`.
 
 from collections import deque
 

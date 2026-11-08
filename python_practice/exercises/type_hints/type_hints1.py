@@ -1,11 +1,17 @@
 # Exercise: Type Hints 1
 # I AM NOT DONE
 #
-# Type hints tell people (and Python tools) what kind of data a variable holds.
+# Python doesn't make you say what type each variable is, but you CAN, and it
+# helps other people (and tools that check your code) understand it. These
+# labels are called TYPE HINTS. You write a colon and the type after the name:
 #
-# Add a type hint to the variable `count` to show it is an `int` (a whole number).
-# It should look like:  count: int = 0
+#     age: int = 12
+#     name: str = "Zoe"
 #
-# Right now `count` has no hint. Add the `: int` part.
+# They are only labels. Python does not enforce them, but a good code editor
+# will warn you if you break them.
+#
+# Add a type hint to `count` to show that it is an int. Make it look like
+#     count: int = 0
 
 count = 0

@@ -1,14 +1,14 @@
 # Exercise: Collections 4
-# -----------------------
 # I AM NOT DONE
 #
-# `defaultdict(list)` is great for grouping: every new key starts with
-# an empty list so you can append without checking first.
+# A `defaultdict(list)` gives every new key an empty list to start with. That's
+# perfect for GROUPING things, because you can append straight away:
 #
-# Group the students below by their grade letter.
-# `by_grade` should be a `defaultdict(list)` where each key is a grade
-# letter and the value is a list of student names with that grade,
-# in the order they appear in `students`.
+#     groups = defaultdict(list)
+#     groups["fruit"].append("apple")
+#
+# Group the students by their grade letter. `by_grade` should link each grade to
+# a list of the names with that grade, in the original order.
 
 from collections import defaultdict
 

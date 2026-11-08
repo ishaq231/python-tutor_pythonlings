@@ -1,8 +1,12 @@
 # Exercise: Classes 7
 # I AM NOT DONE
 #
-# The `greet` method should call `self.get_name()` to get the name
-# and return the greeting string. Replace ??? with the correct call.
+# A method can call the object's other methods too, again using `self`:
+#
+#     self.get_name()
+#
+# Replace the ??? so the `greet` method uses the `get_name` method to get
+# the name for its greeting.
 
 class Greeter:
     def __init__(self, name):

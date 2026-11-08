@@ -1,16 +1,16 @@
 # Exercise: Testing 10
 # I AM NOT DONE
 #
-# Robust tests include *edge cases*: empty input, zero, negatives, and
-# boundary values — the inputs most likely to expose bugs.
+# EDGE CASES are the unusual inputs most likely to break your code: empty
+# lists, zero, negative numbers, and so on. Good testers actively try to
+# break things.
 #
-# Complete `test_sum_list` to cover ALL of the following edge cases for
-# `sum_list(numbers)`:
-#   sum_list([])          == 0         (empty list)
-#   sum_list([0])         == 0         (single zero)
-#   sum_list([-1, -2])    == -3        (all negatives)
-#   sum_list([1, -1])     == 0         (cancellation)
-#   sum_list([1, 2, 3])   == 6         (normal case)
+# Finish `test_sum_list` with five asserts:
+#     sum_list([])         == 0     (empty list)
+#     sum_list([0])        == 0     (a single zero)
+#     sum_list([-1, -2])   == -3    (all negative)
+#     sum_list([1, -1])    == 0     (they cancel out)
+#     sum_list([1, 2, 3])  == 6     (a normal list)
 
 def sum_list(numbers):
     return sum(numbers)

@@ -1,14 +1,13 @@
 # Exercise: Recursion 7
-# ---------------------
 # I AM NOT DONE
 #
-# Complete `deep_sum(nested)` so it returns the sum of all numbers in a
-# possibly-nested list.  Each element is either an int/float or another
-# list.  Base case: empty list returns 0.  Recursive case: if the first
-# element is a list, deep_sum it; otherwise treat it as a plain number.
-# Add that to deep_sum of the rest.
+# Lists can be nested: a list can contain other lists, like
+# [1, [2, 3], [4, [5]]]. A loop is awkward for this because you don't know
+# how deep it goes, but recursion copes easily. If an item is itself a list,
+# call deep_sum on it, which handles whatever it contains.
 #
-# Example: deep_sum([1, [2, 3], [4, [5]]]) == 15
+# `isinstance(first, list)` checks if something is a list. Most of the work is
+# done. Replace the ??? with the sum of the REST of the list.
 
 def deep_sum(nested):
     if not nested:

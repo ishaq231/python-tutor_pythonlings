@@ -1,16 +1,21 @@
 # Exercise: Type Hints 4
 # I AM NOT DONE
 #
-# Annotate the function `find_index` to express that a value might be absent:
-#   - parameter `items` should be annotated as `list[str]`
-#   - parameter `target` should be annotated as `str`
-#   - the return type should be `int | None`  (the value or None when not found)
+# Sometimes a function might give back a value OR nothing at all (None). Use
+# the vertical bar `|` to mean "or":
 #
-# The signature should read:
-#   def find_index(items: list[str], target: str) -> int | None:
+#     int | None       a whole number, or None
 #
-# Keep the `from __future__ import annotations` line below: it lets the modern
-# `int | None` syntax work on Python 3.9 and 3.10 as well.
+# `find_index` returns the position of an item, or None if it isn't in the
+# list. Add type hints:
+#     items is a list[str],  target is a str,  and it returns int | None
+#
+# It should look like:
+#     def find_index(items: list[str], target: str) -> int | None:
+#
+# Leave the `from __future__ import annotations` line as it is. It makes the
+# `int | None` style work on older versions of Python.
+
 from __future__ import annotations
 
 

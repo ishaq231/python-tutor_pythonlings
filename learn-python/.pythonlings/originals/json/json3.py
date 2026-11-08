@@ -1,7 +1,11 @@
 # Exercise: Json 3
 # I AM NOT DONE
 #
-# Goal: Read nested data from a decoded JSON document.
+# JSON data often has things nested inside other things. After `loads`, it's
+# just normal dictionaries, so you dig in with square brackets, one level
+# at a time (like the nested dictionary exercise earlier).
+#
+# Replace the ??? with the code to get the user's city out of `profile`.
 
 import json
 

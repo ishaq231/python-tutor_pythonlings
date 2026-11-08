@@ -1,12 +1,15 @@
 # Exercise: Exceptions 2
 # I AM NOT DONE
 #
-# Complete parse_number(s) so that it converts the string `s` to an int
-# and returns it. If `s` cannot be converted (i.e. int(s) raises a
-# ValueError), return -1 instead.
+# Different mistakes give different error types, so you can catch just the one
+# you expect. Trying to turn "hello" into a number with int("hello") raises
+# a ValueError.
 #
-# Catch the *specific* exception:
-#   except ValueError:
+# It's best to catch the SPECIFIC error you expect (like `except ValueError:`)
+# so other, unexpected bugs aren't hidden.
+#
+# Finish `parse_number(s)` so it converts the string `s` to an int and returns
+# it. If that doesn't work, return -1 instead.
 
 def parse_number(s):
     return int(s)

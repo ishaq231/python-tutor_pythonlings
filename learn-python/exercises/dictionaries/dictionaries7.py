@@ -1,14 +1,18 @@
 # Exercise: Dictionaries 7
 # I AM NOT DONE
 #
-# Iterate over a dictionary to compute a summary.
+# To loop through a dictionary, use .items() and unpack each pair into two names:
 #
-# Given `prices` below, build `discounted` — a new dict where every
-# value is reduced by 10% (multiply each price by 0.9).
-# Round each result to 2 decimal places.
+#     for key, value in d.items():
 #
-# Expected:
-#   discounted == {"apple": 0.9, "milk": 1.35, "bread": 2.25}
+# You can build a new dictionary by starting with an empty one {} and adding
+# to it inside the loop with  new[key] = ...
+#
+# round(number, 2) rounds a number to 2 decimal places.
+#
+# Build `discounted`, a new dictionary where each price in `prices` is
+# reduced by 10% (multiply by 0.9) and rounded to 2 decimal places.
+# Expected: {"apple": 0.9, "milk": 1.35, "bread": 2.25}
 
 prices = {"apple": 1.0, "milk": 1.5, "bread": 2.5}
 

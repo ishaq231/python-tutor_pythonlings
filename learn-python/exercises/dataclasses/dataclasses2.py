@@ -1,12 +1,13 @@
 # Exercise: Dataclasses 2
 # I AM NOT DONE
 #
-# Construct an instance of `Color` and read its fields.
-# Set `red=255`, `green=128`, `blue=0` when creating `orange`.
-# Then complete the `describe` call so it returns the string
-# "R=255 G=128 B=0".
+# The fields of a dataclass are ordinary attributes, so you read them with a
+# dot, e.g. orange.red. The values go in the same order as the fields were listed.
 #
-# Hint: fields are plain attributes — use dot notation to read them.
+# 1. Create `orange` with red=255, green=128, blue=0.
+# 2. Fix `description` so the ??? are replaced by the real field values and the
+#    result is "R=255 G=128 B=0". In an f-string, put the attribute in curly
+#    brackets, like {orange.red}.
 
 from dataclasses import dataclass
 

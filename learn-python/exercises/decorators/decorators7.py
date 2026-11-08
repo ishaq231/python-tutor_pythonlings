@@ -1,12 +1,12 @@
 # Exercise: Decorators 7
 # I AM NOT DONE
 #
-# The `count_calls` decorator should track how many times the decorated
-# function has been called. The count is stored as an attribute on the
-# wrapper: wrapper.call_count, starting at 0 and incrementing on each call.
+# Functions are objects, so they can carry attributes, just like the
+# instances in the Classes exercises. A decorator can use this to remember
+# things between calls, like a counter.
 #
-# Right now the count is never updated. Fix the wrapper to increment
-# wrapper.call_count before forwarding the call.
+# Fix the wrapper in `count_calls` so that it adds 1 to wrapper.call_count
+# every time it is called, before it calls func.
 
 import functools
 

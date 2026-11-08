@@ -1,21 +1,13 @@
 # Exercise: Testing 8
 # I AM NOT DONE
 #
-# pytest's @pytest.mark.parametrize runs the same test for many inputs.
-# Without pytest's collector you can get the same benefit by looping:
+# When you want to test one function with lots of inputs, don't write a
+# separate assert for each. Make a list of (input, expected answer) pairs, and
+# loop through them. The loop is already written, so you only need to fill
+# in the list.
 #
-#   def test_something():
-#       cases = [(input1, expected1), (input2, expected2), ...]
-#       for inp, expected in cases:
-#           assert fn(inp) == expected, f"fn({inp!r}) expected {expected!r}"
-#
-# Complete `test_fahrenheit_to_celsius` by filling in the `cases` list with
-# at least these four (fahrenheit, celsius) pairs:
-#   (32,  0.0)
-#   (212, 100.0)
-#   (98.6, 37.0)
-#   (-40, -40.0)
-# The loop body is already written — only `cases` needs to be filled in.
+# Fill in `cases` with these (fahrenheit, celsius) pairs:
+#     (32, 0.0)   (212, 100.0)   (98.6, 37.0)   (-40, -40.0)
 
 def fahrenheit_to_celsius(f):
     return round((f - 32) * 5 / 9, 10)

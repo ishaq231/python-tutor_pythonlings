@@ -1,14 +1,13 @@
 # Exercise: Generators 8
 # I AM NOT DONE
 #
-# Make `Countdown` iterable by implementing `__iter__`.
+# An ITERABLE is anything you can loop over with `for`. To make your own class
+# iterable, give it an `__iter__` method. A very easy way to write one is to
+# make `__iter__` itself a generator by using `yield` in it.
 #
-# `Countdown(n)` should iterate from n down to 1 (inclusive).
-# The class already stores `self.start`.  Add an `__iter__` method that
-# returns a generator (use `yield` inside it) — do NOT add `__next__`.
-#
-# Example: list(Countdown(3)) == [3, 2, 1]
-
+# Add an `__iter__` method to `Countdown` that yields the numbers from
+# self.start down to 1. For example list(Countdown(3)) is [3, 2, 1].
+# Don't write a `__next__` method.
 
 class Countdown:
     def __init__(self, start):

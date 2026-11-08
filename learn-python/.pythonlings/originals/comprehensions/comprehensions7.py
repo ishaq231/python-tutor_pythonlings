@@ -1,11 +1,14 @@
 # Exercise: Comprehensions 7
 # I AM NOT DONE
 #
-# Use a list comprehension over the characters of a string to build `vowels`:
-# a list of every vowel (a, e, i, o, u) found in `sentence` (lowercase).
+# You can loop through a string one character at a time, just like a list.
 #
-# You can iterate over a string character by character:
-# Example: [c for c in "hello" if c in "aeiou"]  →  ['e', 'o']
+#     [c for c in "hello" if c in "aeiou"]     gives   ["e", "o"]
+#
+# (`c in "aeiou"` checks whether the letter c is one of those five.)
+#
+# Build `vowels`: a list of every vowel found in `sentence` (it's already
+# lower case).
 
 sentence = "list comprehensions are quite powerful"
 

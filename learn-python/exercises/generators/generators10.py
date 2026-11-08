@@ -1,13 +1,12 @@
 # Exercise: Generators 10
 # I AM NOT DONE
 #
-# Complete `running_total(numbers)` — a streaming generator that takes any
-# iterable of numbers and yields the cumulative (running) sum after each item.
+# Generators are great for processing a stream of data one piece at a time.
+# A RUNNING TOTAL adds each new number to everything before it:
+# the running totals of 1, 2, 3, 4 are 1, 3, 6, 10.
 #
-# Example: running_total([1, 2, 3, 4]) → 1, 3, 6, 10
-#
-# The broken version yields each raw number unchanged instead of accumulating.
-
+# Fix `running_total(numbers)` so that it adds each number to `total` and
+# yields the new total (not the raw number).
 
 def running_total(numbers):
     total = 0

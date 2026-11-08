@@ -1,15 +1,17 @@
 # Exercise: Dataclasses 4
 # I AM NOT DONE
 #
-# The `Basket` dataclass needs a `items` field that defaults to an
-# empty list.  You cannot use `items: list = []` directly — Python
-# forbids mutable defaults in dataclasses.
+# Careful! A default of `[]` (an empty list) is dangerous: it would be ONE list
+# shared by every object, so adding to one basket changes all the others. Python
+# stops you from doing this.
 #
-# Fix the `items` field declaration to use `field(default_factory=list)`
-# so each new Basket gets its own independent list.
+# The safe way is `default_factory`, which makes a brand new list for each
+# object:
 #
-# Hint: import `field` from `dataclasses` and write
-#   items: list = field(default_factory=list)
+#     from dataclasses import field
+#     items: list = field(default_factory=list)
+#
+# Fix the `items` field in `Basket` that way (and import `field`).
 
 from dataclasses import dataclass
 

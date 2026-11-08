@@ -1,15 +1,13 @@
 # Exercise: File IO 4
 # I AM NOT DONE
 #
-# `poem_path` already contains three lines:
-#   "roses are red\n"
-#   "violets are blue\n"
-#   "python is great\n"
+# A file usually has many lines. .readlines() gives you a LIST with one string
+# per line. The lines still have the invisible "\n" new-line character on the end.
 #
-# Read ALL lines from the file and store them in the variable `lines`
-# as a list of strings (newlines included, as .readlines() returns them).
+#     lines = open(path).readlines()
 #
-# Hint: open(path).readlines() returns a list of lines.
+# `poem_path` has a poem with three lines. The code currently uses .read(),
+# which gives one big string. Change it so `lines` is a list of the lines.
 
 import tempfile
 

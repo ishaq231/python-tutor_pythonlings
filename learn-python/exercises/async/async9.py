@@ -1,7 +1,13 @@
 # Exercise: Async 9
 # I AM NOT DONE
 #
-# Goal: Gather doubled values from several async calls.
+# You can use a comprehension to make a bunch of coroutines, then `gather`
+# them all. The star `*` unpacks a list into separate arguments:
+#
+#     await asyncio.gather(*[job(x) for x in things])
+#
+# Replace the ??? so double_all(values) returns the doubled values, using
+# gather to run double() for each value.
 
 import asyncio
 

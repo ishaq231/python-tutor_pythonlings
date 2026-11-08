@@ -1,12 +1,14 @@
 # Exercise: Exceptions 6
 # I AM NOT DONE
 #
-# Complete require_positive(n) so that:
-# - If n is greater than 0, return n.
-# - Otherwise, raise a ValueError.
+# So far Python raised the errors. You can raise your own, with `raise`, when
+# something is wrong. This stops the function straight away (just like an
+# unhandled error would).
 #
-# Use the `raise` statement to throw an exception:
-#   raise ValueError
+#     raise ValueError
+#
+# Finish `require_positive(n)`: return n if it's more than 0, otherwise raise
+# a ValueError.
 
 def require_positive(n):
     # TODO: raise ValueError when n is not positive

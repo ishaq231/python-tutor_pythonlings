@@ -1,14 +1,14 @@
 # Exercise: Dictionaries 8
 # I AM NOT DONE
 #
-# Use the `in` operator to test key membership in a dict.
+# `in` works on dictionaries too (like on lists and strings). It checks
+# the KEYS, not the values:
 #
-# Given `permissions` below, set:
-#   `can_read`    — True if "read"   is a key in permissions, False otherwise
-#   `can_write`   — True if "write"  is a key in permissions, False otherwise
-#   `can_delete`  — True if "delete" is a key in permissions, False otherwise
+#     "apple" in {"apple": 5}     gives   True
 #
-# Do NOT hard-code True/False — use `in` expressions.
+# Using `permissions`, set `can_read`, `can_write` and `can_delete` to True
+# if "read", "write" or "delete" is a key in it, and False otherwise.
+# Don't just type True or False - use `in`.
 
 permissions = {"read": True, "write": False}
 

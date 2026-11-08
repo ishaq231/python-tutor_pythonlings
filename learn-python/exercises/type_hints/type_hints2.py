@@ -1,13 +1,15 @@
 # Exercise: Type Hints 2
 # I AM NOT DONE
 #
-# Annotate the function `greet` so that:
-#   - parameter `name` is annotated as `str`
-#   - parameter `times` is annotated as `int`
-#   - the return type is annotated as `str`
+# You can add type hints to a function too. Each parameter gets `: type`, and
+# `->` followed by a type says what the function returns:
 #
-# The signature should read:
-#   def greet(name: str, times: int) -> str:
+#     def add(x: int, y: int) -> int:
+#
+# Add type hints to `greet` so that:
+#     name is a str, times is an int, and the function returns a str.
+#
+# It should look like:  def greet(name: str, times: int) -> str:
 
 def greet(name, times):
     return (name + " ") * times

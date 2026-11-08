@@ -1,7 +1,11 @@
 # Exercise: Datetime 7
 # I AM NOT DONE
 #
-# Goal: Combine a date and time into one datetime.
+# `datetime.combine(a_date, a_time)` glues a `date` and a `time` together into
+# one `datetime`. (`time(14, 45)` means 2:45 pm, written as hours then minutes
+# on the 24-hour clock.)
+#
+# Replace the ??? so that `appointment` combines `day` and `clock`.
 
 from datetime import date, datetime, time
 

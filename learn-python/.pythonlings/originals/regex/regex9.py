@@ -1,16 +1,15 @@
 # Exercise: Regex 9
 # I AM NOT DONE
 #
-# Use re.search with named capturing groups to parse a date string of
-# the form "YYYY-MM-DD" and extract its parts.
-# Store the results in `year`, `month`, and `day` (all strings).
+# Numbered groups get confusing. You can NAME a group with ?P<name>
+# right after the opening bracket:
 #
-# Named groups:
-#   (?P<name>...)   captures text and names it `name`
-#   match.group("name") retrieves the captured text by name
+#     (?P<year>\d{4})        <- a group called "year" holding four digits
 #
-# Fix the pattern (replace ???) so the three named groups
-# "year", "month", and "day" each capture the appropriate part.
+# then ask for it by name: match.group("year")
+#
+# A date looks like "2024-07-15". Write a pattern with three named groups,
+# "year", "month" and "day", with literal dashes between them.
 
 import re
 

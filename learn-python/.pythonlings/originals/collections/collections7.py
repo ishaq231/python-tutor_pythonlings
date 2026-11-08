@@ -1,16 +1,16 @@
 # Exercise: Collections 7
-# -----------------------
 # I AM NOT DONE
 #
-# `deque` (double-ended queue) supports O(1) appends and pops from
-# BOTH ends — unlike a list, which is O(n) for the left end.
+# A `deque` (say "deck") is a double-ended queue. You can add and remove at
+# BOTH ends, and it's very quick at it, even with a huge number of items.
+# (A list is slow at changing its front.)
 #
-# Starting from an empty deque `d`:
-#   1. appendleft(1)   — push to the left
-#   2. append(2)       — push to the right
-#   3. appendleft(0)   — push to the left again
-#   4. Store the result of pop()       in `right_val`   (removes from right)
-#   5. Store the result of popleft()   in `left_val`    (removes from left)
+#     d.append(x)       add to the right      d.pop()       remove from the right
+#     d.appendleft(x)   add to the left       d.popleft()   remove from the left
+#
+# Starting with the empty deque `d`, do these in order:
+#     1. appendleft(1)   2. append(2)   3. appendleft(0)
+# Then save d.pop() in `right_val` and d.popleft() in `left_val`.
 
 from collections import deque
 

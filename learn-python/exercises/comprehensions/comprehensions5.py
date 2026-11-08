@@ -1,11 +1,13 @@
 # Exercise: Comprehensions 5
 # I AM NOT DONE
 #
-# Use a dict comprehension to build `squared`: a mapping from each number in
-# `numbers` to its square.
+# Curly brackets give you a DICTIONARY comprehension. You write a key and a
+# value with a colon between them:
 #
-# A dict comprehension: {key_expr: val_expr for item in iterable}
-# Example: {x: x**2 for x in [1, 2, 3]}  →  {1: 1, 2: 4, 3: 9}
+#     {x: x ** 2 for x in [1, 2, 3]}     gives   {1: 1, 2: 4, 3: 9}
+#
+# Build `squared`: a dictionary where each number in `numbers` is a key and
+# its square is the value.
 
 numbers = [1, 2, 3, 4, 5]
 

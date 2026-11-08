@@ -1,8 +1,12 @@
 # Exercise: Classes 5
 # I AM NOT DONE
 #
-# Add an `increment` method to Counter that adds 1 to `self.count`.
-# The method currently does nothing — replace `pass` with the right line.
+# Methods can also CHANGE the object's attributes. This one remembers a
+# number and goes up each time you use it:
+#
+#     self.count = self.count + 1        (or  self.count += 1)
+#
+# Replace `pass` in `increment` so that it adds 1 to `self.count`.
 
 class Counter:
     def __init__(self):

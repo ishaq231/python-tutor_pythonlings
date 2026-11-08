@@ -1,20 +1,18 @@
 # Exercise: Testing 12
 # I AM NOT DONE
 #
-# A test suite is a collection of test functions that together give
-# confidence in a whole module. Write a *separate* test function for each
-# concern rather than cramming everything into one.
+# A TEST SUITE is a collection of tests that together check a whole module.
+# Write a SEPARATE test function for each job. Then when one fails, the name
+# tells you exactly what's broken.
 #
-# Below is a small "string_utils" module. Write four test functions:
-#
-#   test_palindrome()    — verify is_palindrome for at least 3 inputs
-#                          (one true, one false, one edge case like "")
-#   test_word_count()    — verify word_count for at least 3 inputs
-#                          (normal sentence, single word, empty string)
-#   test_title_case()    — verify to_title_case for at least 2 inputs
-#   test_truncate()      — verify truncate for at least 3 inputs
-#                          (short string unchanged, long string truncated,
-#                           boundary length exactly)
+# Below are four small text helper functions. Fill in the four test functions
+# (replace each `pass`):
+#     test_palindrome    at least 3 asserts (one True, one False, and an edge
+#                        case such as "")
+#     test_word_count    at least 3 asserts (a sentence, one word, and "")
+#     test_title_case    at least 2 asserts
+#     test_truncate      at least 3 asserts (a short string that stays the same,
+#                        a long one that gets cut, and one exactly on the limit)
 
 def is_palindrome(s):
     s = s.lower().replace(" ", "")

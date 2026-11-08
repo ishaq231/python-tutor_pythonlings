@@ -1,18 +1,19 @@
 # Exercise: Testing 6
 # I AM NOT DONE
 #
-# Sometimes the correct behaviour is for a function to *raise* an exception.
-# Test that with a try/except block:
+# Sometimes the RIGHT behaviour is for a function to raise an error (like
+# for bad input). To test that, use try/except from the Exceptions topic. The
+# trick is the line after the call: if no error happened, the test must fail.
 #
-#   try:
-#       call_that_should_raise()
-#       assert False, "expected an exception but none was raised"
-#   except SomeError:
-#       pass  # good — exception was raised as expected
+#     try:
+#         function_that_should_fail()
+#         assert False, "expected an error but none came"
+#     except ValueError:
+#         pass      <- this is the good outcome
 #
-# Complete `test_parse_positive` so it:
-#   1. Asserts parse_positive("42") == 42  (happy path)
-#   2. Verifies that parse_positive("-1") raises ValueError
+# Finish `test_parse_positive` with two checks:
+#     1. parse_positive("42") == 42
+#     2. parse_positive("-1") raises a ValueError
 
 def parse_positive(s):
     n = int(s)

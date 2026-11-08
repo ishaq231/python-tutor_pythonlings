@@ -1,11 +1,13 @@
 # Exercise: Comprehensions 2
 # I AM NOT DONE
 #
-# Use a list comprehension with an `if` filter to build `evens`: only the
-# even numbers from `values`.
+# Add an `if` at the end to FILTER: only the items where the condition is
+# True make it into the new list.
 #
-# A filtered comprehension: [expr for item in iterable if condition]
-# Example: [x for x in range(6) if x > 3]  →  [4, 5]
+#     [x for x in range(6) if x > 3]      gives   [4, 5]
+#
+# Build `evens` from `values`, keeping only the even numbers.
+# (Remember `n % 2 == 0` is True for even numbers.)
 
 values = [1, 2, 3, 4, 5, 6, 7, 8]
 

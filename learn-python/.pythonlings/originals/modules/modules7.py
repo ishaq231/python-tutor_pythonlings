@@ -1,14 +1,16 @@
 # Exercise: Modules 7
-# --------------------
 # I AM NOT DONE
 #
-# The `if __name__ == "__main__":` guard lets you write code that only
-# runs when the file is executed directly, not when it is imported.
+# That is how Python programmers write code that runs only when the file is
+# run directly, and not when it's imported by something else:
 #
-# Below, `ran_as_script` must be True only when this file is run as a
-# script (i.e. when __name__ == "__main__").
+#     if __name__ == "__main__":
+#         ...this only runs when the file is run directly...
 #
-# Replace the ??? so that `ran_as_script` is set correctly inside the guard.
+# You'll see this at the bottom of most real Python programs.
+#
+# When this file is run as a script, `ran_as_script` should be True. Replace
+# the ??? with the right value.
 
 ran_as_script = False
 

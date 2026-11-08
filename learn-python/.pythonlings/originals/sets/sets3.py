@@ -1,13 +1,11 @@
 # Exercise: Sets 3
 # I AM NOT DONE
 #
-# Use the `in` operator to check membership in a set.
+# Checking if something is in a set is exactly like `in` for lists
+# (and it's super quick, even for huge sets!).
 #
-# Given the set `fruits`, set:
-#   has_apple  = True if "apple"  is in fruits, False otherwise
-#   has_grape  = True if "grape"  is in fruits, False otherwise
-#
-# Do NOT use literals True or False directly — use the `in` operator.
+# Replace each ??? with the right operator, so that `has_apple` and
+# `has_grape` become True or False depending on what is in `fruits`.
 
 fruits = {"apple", "banana", "cherry"}
 

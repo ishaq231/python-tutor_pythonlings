@@ -1,10 +1,13 @@
 # Exercise: File IO 2
 # I AM NOT DONE
 #
-# `note_path` points to a file that already contains the text "remember".
-# Read the WHOLE file and store its text in the variable `contents`.
+# To get a file's text back, open it for reading and use .read(), which gives
+# the whole file as one string.
 #
-# Hint: open(path).read() returns the entire file as a string.
+#     text = open(path).read()
+#
+# `note_path` points to a file that contains the text "remember". Read the
+# whole file and save its text in `contents`.
 
 import tempfile
 

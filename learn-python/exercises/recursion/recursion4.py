@@ -1,10 +1,11 @@
 # Exercise: Recursion 4
-# ---------------------
 # I AM NOT DONE
 #
-# Complete `count_items(lst)` so it returns the number of elements in
-# `lst` using recursion — without calling `len()`.  Base case: empty
-# list has length 0.  Recursive case: 1 + count_items of the tail.
+# Same idea again: how long is a list? It's "1 plus the length of the rest of the
+# list". The recursive case is already written.
+#
+# Replace the ??? with the right base-case answer: how many items are in an
+# empty list?
 
 def count_items(lst):
     if not lst:

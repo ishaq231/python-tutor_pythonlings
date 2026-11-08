@@ -1,17 +1,13 @@
 # Exercise: Regex 5
 # I AM NOT DONE
 #
-# Use re.findall to find all tokens that look like version numbers:
-# one or more digits, a literal dot, one or more digits
-# (e.g. "3.10", "1.0", "2.7").
-# Store the result in `versions`.
+# Some characters have a special job in a pattern, and the dot is one of
+# them: `.` means "any character at all". To match an actual full stop you must
+# ESCAPE it with a backslash: \.
 #
-# Quantifier reminder:
-#   +     one or more of the preceding element
-#   \d    any digit  (same as [0-9])
-#   \.    a literal dot (dot without backslash means "any character")
-#
-# Fix the pattern (replace ???) to capture version-like tokens.
+# Version numbers look like 3.10: some digits, a dot, then some digits.
+# Replace the ??? with a pattern that finds these in `text`. It must NOT
+# match "1.x" or "42".
 
 import re
 

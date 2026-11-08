@@ -1,11 +1,15 @@
 # Exercise: Dictionaries 3
 # I AM NOT DONE
 #
-# You have an existing dict `scores`. Do two things:
-#   1. Add a new key "diana" with value 91.
-#   2. Update "alice"'s value to 88 (she re-took the test).
+# Dictionaries can be changed. The same line of code does two jobs:
 #
-# Modify `scores` in place — do not create a new dict.
+#     d[key] = value
+#         - if the key is NEW, it gets added
+#         - if the key already EXISTS, its value is replaced
+#
+# Change `scores` itself (don't make a new dictionary):
+#     1. Add a new key "diana" with the value 91.
+#     2. Update "alice" to 88 (she re-took the test).
 
 scores = {"alice": 75, "bob": 60, "carol": 82}
 

@@ -1,14 +1,19 @@
 # Exercise: Regex 3
 # I AM NOT DONE
 #
-# Use re.findall to collect every run of digits in `text` as a list
-# of strings. Store the result in `numbers`.
+# `re.findall(pattern, text)` finds EVERY match, and gives them to you as a list
+# of strings.
 #
-# re.findall(pattern, string) returns a list of all non-overlapping
-# matches of `pattern` in `string`.
+# Special codes make patterns more powerful:
+#     \d    any one digit (0 to 9)
+#     +     "one or more" of the thing just before it
+# So \d+ means "one or more digits in a row", like 12 or 450.
 #
-# The pattern `\d+` matches one or more digit characters.
-# Fix the pattern (replace ???) so that `numbers` holds all digit runs.
+# Tip: patterns are full of backslashes, so write an `r` just before the
+# opening quote, like r"\d+". This "raw string" tells Python to leave the
+# backslashes alone.
+#
+# Replace the ??? with a pattern that finds all the numbers in `text`.
 
 import re
 

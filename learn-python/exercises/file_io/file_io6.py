@@ -1,13 +1,16 @@
 # Exercise: File IO 6
 # I AM NOT DONE
 #
-# `numbers_path` contains five numbers, one per line:
-#   10, 20, 30, 40, 50
+# You can loop straight over an open file and get one line at a time:
 #
-# Iterate over the lines of the file (using `for line in fh:`) and build
-# `total` as the sum of the integer values.
+#     for line in fh:
 #
-# Hint: int(line.strip()) converts a line like "10\n" to the integer 10.
+# Each line is a string that ends with "\n". To use it as a number, remove
+# the spaces and new-line with .strip() and then convert with int():
+#     int(line.strip())
+#
+# The file contains five numbers, one per line. Fix the loop so `total`
+# becomes the sum of them (10 + 20 + 30 + 40 + 50).
 
 import tempfile
 

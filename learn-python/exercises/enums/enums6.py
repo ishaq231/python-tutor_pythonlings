@@ -1,7 +1,11 @@
 # Exercise: Enums 6
 # I AM NOT DONE
 #
-# Goal: Give each Direction member a delta tuple and return it from a method.
+# Enums are classes, so they can have methods! Inside a method, `self` is the
+# member itself, and `self.value` is its value. Here every direction's value is
+# a tuple of (x change, y change).
+#
+# Replace the ??? so that delta() returns the member's value.
 
 from enum import Enum
 

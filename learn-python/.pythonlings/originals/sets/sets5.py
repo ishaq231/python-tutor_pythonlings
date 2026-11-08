@@ -1,12 +1,10 @@
 # Exercise: Sets 5
 # I AM NOT DONE
 #
-# Compute the intersection of two sets — only elements present in BOTH sets.
+# The INTERSECTION is the part where the circles overlap: only the items
+# that are in BOTH sets. Use the `&` sign (or .intersection()).
 #
-# Given `a` and `b`, store their intersection in `shared`.
-# Use the `&` operator or the `.intersection()` method.
-#
-# Expected: shared == {3, 4}
+# Save the intersection of `a` and `b` in `shared`.
 
 a = {1, 2, 3, 4}
 b = {3, 4, 5, 6}

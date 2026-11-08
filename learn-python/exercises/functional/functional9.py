@@ -1,12 +1,18 @@
 # Exercise: Functional 9
 # I AM NOT DONE
 #
-# Use the built-in `any()` and `all()` to fill in two expressions below.
+# Two handy built-in functions answer yes/no questions about a collection:
+#     any(...)   True if AT LEAST ONE item passes the test
+#     all(...)   True if EVERY item passes the test
 #
-# `has_negative` should be True if ANY number in `numbers` is negative.
-# `all_positive` should be True if ALL numbers in `positives` are positive (> 0).
+# You give them a comprehension-style expression (without the square
+# brackets):
 #
-# Replace each ??? with the correct generator expression inside any()/all().
+#     any(n > 10 for n in numbers)
+#
+# Replace the ??? so that `has_negative` is True if any number in `numbers` is
+# negative, and `all_positive` is True if all the numbers in `positives` are
+# positive (more than 0).
 
 numbers = [3, -1, 4, 1, 5]
 positives = [2, 7, 11, 5]

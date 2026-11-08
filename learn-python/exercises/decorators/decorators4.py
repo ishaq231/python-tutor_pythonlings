@@ -1,12 +1,11 @@
 # Exercise: Decorators 4
 # I AM NOT DONE
 #
-# The `double_result` decorator should wrap `func`, call it, and return
-# the return value multiplied by 2.
+# A wrapper must hand back the result of the wrapped function with `return`.
+# Otherwise the answer is thrown away and the caller gets None (nothing).
 #
-# Right now the wrapper does NOT return anything (returns None).
-# Fix the wrapper so it captures and returns double the wrapped function's result.
-
+# The wrapper in `double_result` calls func() but throws the result away. Fix it
+# so the wrapper returns double the wrapped function's result.
 
 def double_result(func):
     def wrapper():

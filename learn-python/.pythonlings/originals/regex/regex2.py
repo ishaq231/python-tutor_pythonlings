@@ -1,13 +1,11 @@
 # Exercise: Regex 2
 # I AM NOT DONE
 #
-# Use re.search to find the word "python" anywhere inside `text`.
-# Store the result (a match object or None) in `result`.
+# `re.match` only looks at the very start. `re.search` is more useful: it
+# scans through the WHOLE text and finds the first place where the pattern
+# matches. It gives back a match object, or None if there is no match.
 #
-# Unlike re.match, re.search scans through the whole string looking for
-# the first location where the pattern matches.
-#
-# Fix the pattern so that `result` is not None for the given `text`.
+# Replace the ??? with a pattern that finds the word "python" inside `text`.
 
 import re
 

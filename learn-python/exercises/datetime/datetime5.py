@@ -1,7 +1,10 @@
 # Exercise: Datetime 5
 # I AM NOT DONE
 #
-# Goal: Check whether the due date is after today.
+# Dates can be compared with the normal comparison signs (<, >, ==, ...). A
+# LATER date counts as GREATER.
+#
+# Replace the ??? so that `is_future` is True if `due` comes after `today`.
 
 from datetime import date
 

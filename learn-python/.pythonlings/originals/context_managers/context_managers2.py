@@ -1,13 +1,13 @@
 # Exercise: Context Managers 2
 # I AM NOT DONE
 #
-# After the with-block finishes, the file object should be closed
-# automatically.  The code below opens a file WITHOUT a with-statement,
-# so `f.closed` is False after the write.
+# A file object has a `closed` attribute that tells you if it's closed. With
+# `with`, it's True as soon as the indented block ends. Without `with`,
+# the file stays open.
 #
-# Fix it: replace the bare open/write/close sequence with a with-statement
-# that opens `data_path` for writing and writes "closed check".
-# After the with-block, `f` must be the file object and `f.closed` must be True.
+# Rewrite the code with a `with` statement that opens `data_path` for writing and
+# writes "closed check". Keep the file variable called `f`, so that after the
+# `with` block `f.closed` is True.
 
 import tempfile
 

@@ -1,13 +1,18 @@
 # Exercise: Exceptions 4
 # I AM NOT DONE
 #
-# Complete load_value(data, key) so it uses a try/except/else block:
-#   - try to retrieve data[key]
-#   - if a KeyError occurs, return the string "missing"
-#   - in the else clause (runs only when no exception occurred),
-#     return the value doubled (value * 2)
+# try/except can have an `else` part too. It runs only if the `try` part
+# finished with NO error. It's a tidy place for "and if all went well, then...".
 #
-# The else clause of a try block runs when NO exception was raised.
+#     try:
+#         ...
+#     except KeyError:
+#         ...           <- runs if there was an error
+#     else:
+#         ...           <- runs if there was NO error
+#
+# Finish `load_value(data, key)`: if the key is missing, return "missing".
+# Otherwise (in the `else` part) return the value doubled.
 
 def load_value(data, key):
     try:

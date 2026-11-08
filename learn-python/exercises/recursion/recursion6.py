@@ -1,11 +1,13 @@
 # Exercise: Recursion 6
-# ---------------------
 # I AM NOT DONE
 #
-# Complete `reverse_string(s)` so it returns the string `s` reversed
-# using recursion.  Base case: a string of length 0 or 1 is already
-# reversed.  Recursive case: reverse the tail, then append the first
-# character.
+# To reverse a string recursively: reverse everything AFTER the first
+# character, then put the first character on the end.
+#
+#     s[0]    is the first character
+#     s[1:]   is everything after it
+#
+# Replace the ??? with that recursive case.
 
 def reverse_string(s):
     if len(s) <= 1:

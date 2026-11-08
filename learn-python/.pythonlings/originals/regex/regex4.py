@@ -1,17 +1,15 @@
 # Exercise: Regex 4
 # I AM NOT DONE
 #
-# Use re.findall with a character-class pattern to collect every
-# lowercase ASCII word (only letters a-z) from `text`.
-# Store the result in `words`.
+# Square brackets make a CHARACTER CLASS: "any ONE character from this set".
+# Ranges are allowed:
+#     [a-z]    any lowercase letter          [A-Z]   any capital letter
+#     [0-9]    any digit                     [a-zA-Z]  any letter at all
 #
-# Character classes:
-#   [a-z]   matches any single lowercase letter
-#   [a-z]+  matches a run of one or more lowercase letters
+# Add `+` after it to match a run of them: [a-z]+ is a whole lowercase word.
 #
-# Note: `\w` also matches digits and underscores, so use [a-z]+ here.
-# Fix the pattern (replace ???) so that `words` contains only
-# lowercase letter runs, ignoring digits and punctuation.
+# Replace the ??? with a pattern that finds only the runs of lowercase
+# letters in `text`, ignoring capitals, digits and punctuation.
 
 import re
 

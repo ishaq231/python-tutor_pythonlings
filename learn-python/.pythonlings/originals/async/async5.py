@@ -1,7 +1,12 @@
 # Exercise: Async 5
 # I AM NOT DONE
 #
-# Goal: Create a task, await it, and return its result.
+# A TASK is a coroutine that has been scheduled to start running in the
+# background right away. `asyncio.create_task(coroutine)` makes one. You can
+# then `await` the task later to get its result.
+#
+# Replace the ??? with a task made from compute() (remember to call it, so
+# you have a coroutine to pass in).
 
 import asyncio
 

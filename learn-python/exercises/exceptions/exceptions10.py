@@ -1,16 +1,17 @@
 # Exercise: Exceptions 10
 # I AM NOT DONE
 #
-# Complete validate_username(name) which enforces three rules:
-#   1. The name must be a str; if not, raise TypeError("username must be a str").
-#   2. The name must be between 3 and 20 characters (inclusive); if not,
-#      raise ValueError("username must be 3–20 characters").
-#   3. The name must contain only letters and digits (name.isalnum()); if not,
-#      raise ValueError("username must be alphanumeric").
+# Time to put it all together! Validation means checking that data makes
+# sense before using it. Check the rules in this order, raising an error with
+# the exact message given for the first rule that is broken:
 #
-# On success, return name.lower().
+#     1. name must be a str      -> TypeError("username must be a str")
+#        (check with isinstance(name, str))
+#     2. 3 to 20 characters long -> ValueError("username must be 3–20 characters")
+#     3. only letters and digits -> ValueError("username must be alphanumeric")
+#        (name.isalnum() tells you this)
 #
-# Check the rules in the order listed above.
+# If everything is fine, return name.lower().
 
 def validate_username(name):
     # TODO: check type (raise TypeError if not str)

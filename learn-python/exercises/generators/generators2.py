@@ -1,12 +1,14 @@
 # Exercise: Generators 2
 # I AM NOT DONE
 #
-# `squares(n)` is already a correct generator that yields 1², 2², ..., n².
-# Your task: call `squares(5)` and convert the result to a list, storing it
-# in the variable `result`.
+# Calling a generator function does NOT run it. It gives back a GENERATOR
+# OBJECT, like a machine that's ready to produce values when asked. It is not a
+# list. To collect everything it makes into a list, wrap it with list():
 #
-# Hint: a generator object is not a list — wrap it with list().
-
+#     list(three())      gives   [1, 2, 3]
+#
+# `squares(n)` is already written and works. Call `squares(5)`, turn the
+# result into a list, and save it in `result`.
 
 def squares(n):
     for i in range(1, n + 1):

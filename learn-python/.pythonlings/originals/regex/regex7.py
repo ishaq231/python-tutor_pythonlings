@@ -1,20 +1,16 @@
 # Exercise: Regex 7
 # I AM NOT DONE
 #
-# Use re.search with a capturing group to extract the area code from
-# a US phone number of the form "(NXX) NXX-XXXX".
-# Store the three-digit area code string in `area_code`.
+# Round brackets make a GROUP, which remembers the part of the text it matched.
+# You can then pull that part out with match.group(1) (the first group, groups
+# count from 1).
 #
-# Capturing groups:
-#   (...)       captures whatever the sub-pattern matches
-#   match.group(1) returns the text captured by the first group
+# Because ( and ) are used for groups, matching real brackets in the text
+# needs a backslash: \( and \)
 #
-# The phone number format: (NXX) NXX-XXXX
-#   \(   literal open parenthesis
-#   \d{3} three digits  ← this is the area code to capture
-#   \)   literal close parenthesis
-#
-# Fix the pattern (replace ???) so that group(1) gives the area code.
+# Phone numbers look like "(415) 555-2671". Replace the ??? with a pattern
+# that matches the whole format, with the three-digit area code inside a
+# group. Then `area_code` will be "415".
 
 import re
 

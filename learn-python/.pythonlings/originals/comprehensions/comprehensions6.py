@@ -1,11 +1,12 @@
 # Exercise: Comprehensions 6
 # I AM NOT DONE
 #
-# Use a set comprehension to build `unique_lengths`: the set of distinct word
-# lengths in `words`.
+# Curly brackets WITHOUT a colon make a SET comprehension (you met sets
+# earlier, so no repeats allowed!).
 #
-# A set comprehension: {expr for item in iterable}
-# Example: {len(w) for w in ["hi", "hey", "yo"]}  →  {2, 3}
+#     {len(w) for w in ["hi", "hey", "yo"]}     gives   {2, 3}
+#
+# Build `unique_lengths`: the set of different word lengths in `words`.
 
 words = ["apple", "bat", "car", "dog", "elephant", "fig"]
 

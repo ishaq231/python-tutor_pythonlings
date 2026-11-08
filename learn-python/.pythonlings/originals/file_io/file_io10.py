@@ -1,14 +1,12 @@
 # Exercise: File IO 10
 # I AM NOT DONE
 #
-# `src_path` contains three lines of mixed-case text.
-# Copy the file to `dst_path`, converting every line to UPPERCASE.
-# After your code runs, `dst_path` should contain the uppercased text.
+# You can have two files open at once. Here one is read and the other
+# is written. This is a "copy" with a twist: every line is changed to UPPERCASE
+# on the way across. (.upper() makes capital letters, as you saw in Strings.)
 #
-# Steps:
-#   1. Open src_path for reading.
-#   2. Open dst_path for writing.
-#   3. For each line read from src, write line.upper() to dst.
+# Fix the code so that `dst_path` ends up containing the uppercase version
+# of the text in `src_path`.
 
 import tempfile
 

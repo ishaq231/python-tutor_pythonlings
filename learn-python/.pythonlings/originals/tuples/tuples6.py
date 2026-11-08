@@ -1,12 +1,14 @@
 # Exercise: Tuples 6
 # I AM NOT DONE
 #
-# Complete the function `min_max` so that it returns a tuple of two
-# values: (minimum, maximum) of the given list.
+# When a function returns more than one value, it really returns a tuple.
+# Write the values separated by a comma and Python bundles them up for you:
 #
-# Do not use multiple return statements — return both values as a
-# single tuple in one `return` statement.
-
+#     return a, b
+#
+# Complete `min_max` so it returns a tuple (minimum, maximum) of the list
+# it is given. Use just one `return` statement. The built-in functions min()
+# and max() will help.
 
 def min_max(numbers):
     pass  # replace with a return statement that returns (min, max)

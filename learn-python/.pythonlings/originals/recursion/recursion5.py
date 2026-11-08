@@ -1,10 +1,12 @@
 # Exercise: Recursion 5
-# ---------------------
 # I AM NOT DONE
 #
-# Complete `fibonacci(n)` so it returns the nth Fibonacci number using
-# recursion.  fibonacci(0) == 0, fibonacci(1) == 1, and for n > 1:
-# fibonacci(n) == fibonacci(n - 1) + fibonacci(n - 2).
+# The Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, ... Each number is the sum of
+# the two before it. Here the recursive case calls the function TWICE. It has
+# two base cases: fibonacci(0) is 0, and fibonacci(1) is... what? Look at the
+# start of the sequence above.
+#
+# Replace the ??? with the right answer for fibonacci(1).
 
 def fibonacci(n):
     if n == 0:

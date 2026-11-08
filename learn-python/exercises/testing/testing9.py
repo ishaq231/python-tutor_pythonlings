@@ -1,20 +1,12 @@
 # Exercise: Testing 9
 # I AM NOT DONE
 #
-# A *fixture* is a helper that builds the test data your tests need.
-# In plain Python you write a setup function and call it at the top of
-# each test that needs it:
+# Tests often need some data to work with. A FIXTURE is a helper function
+# that builds that data fresh each time, so one test can't disturb another.
 #
-#   def make_shopping_cart():
-#       return {"items": [], "discount": 0}
-#
-#   def test_add_item():
-#       cart = make_shopping_cart()
-#       ...
-#
-# `make_user` below is the fixture. Complete `test_user_greeting` so it:
-#   1. Calls `make_user()` to get a fresh user dict.
-#   2. Asserts that `greet(user)` returns "Hello, Alice!"
+# `make_user` is the fixture. Finish `test_user_greeting` so it:
+#     1. calls make_user() and saves the result in a variable
+#     2. asserts that greet(user) is "Hello, Alice!"
 
 def make_user():
     return {"name": "Alice", "age": 30}

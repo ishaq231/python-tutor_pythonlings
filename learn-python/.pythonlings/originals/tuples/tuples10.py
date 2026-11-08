@@ -1,17 +1,19 @@
 # Exercise: Tuples 10
 # I AM NOT DONE
 #
-# You are given a list of (name, score) tuples representing student results.
+# Let's use everything you know about tuples. `results` is a list of
+# (name, score) tuples. When you loop through it you can unpack each tuple
+# straight into two names:
 #
-# Complete the code so that:
-#   `top_student` — the name of the student with the highest score
-#   `average`     — the average score (total / number of students), as a float
-#   `passed`      — a list of names whose score is >= 60, in the original order
+#     for name, score in results:
 #
-# Expected:
-#   top_student == "Diana"
-#   average     == 71.0
-#   passed      == ["Alice", "Diana", "Eve"]
+# Work out:
+#     top_student -> the name of the student with the highest score
+#     average     -> the average score (the total divided by how many)
+#     passed      -> a list of names with a score of 60 or more, in the
+#                    original order
+# Expected: top_student == "Diana", average == 71.0,
+# passed == ["Alice", "Diana", "Eve"]
 
 results = [
     ("Alice", 85),

@@ -1,14 +1,17 @@
 # Exercise: Decorators 9
 # I AM NOT DONE
 #
-# Decorators can be stacked: the one closest to `def` is applied first,
-# then the outer one wraps that result.
+# Decorators can be stacked. The one closest to the `def` is applied FIRST,
+# then the one above wraps the result of that.
 #
-# Given the two decorators below, apply BOTH to `get_value` using the `@`
-# syntax so that calling get_value() returns "[B][A]42".
+#     @outer
+#     @inner
+#     def f(): ...
 #
-# Stack order matters: figure out which decorator goes on top.
-
+# is the same as  f = outer(inner(f))
+#
+# Stack both decorators on `get_value` so it returns "[B][A]42". Think about
+# which wrapper adds its text first and which one goes on the outside.
 
 def add_a(func):
     def wrapper():

@@ -1,14 +1,20 @@
 # Exercise: Exceptions 5
 # I AM NOT DONE
 #
-# Complete read_first(items) using a try/finally block.
-# - Try to return items[0].
-# - If items is empty (IndexError), return None.
-# - In the finally clause, append the string "done" to the module-level
-#   list `log` — this must happen whether or not an exception occurred.
+# A `finally` part ALWAYS runs at the end, whether there was an error or not,
+# even if a `return` has just happened. It's used for tidying up, like
+# closing a file.
 #
-# The finally clause runs ALWAYS, even when an exception is raised or
-# a return is executed in the try block.
+#     try:
+#         ...
+#     except SomeError:
+#         ...
+#     finally:
+#         ...           <- always runs
+#
+# Finish `read_first(items)`: try to return items[0], and return None if
+# the list is empty (an IndexError). In a `finally` part, use log.append("done")
+# so "done" is added to the list `log` every time.
 
 log = []
 

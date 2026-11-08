@@ -1,11 +1,11 @@
 # Exercise: File IO 8
 # I AM NOT DONE
 #
-# `source_path` contains the text "  Hello, World!  " (with surrounding spaces).
-# Read the file, strip the leading/trailing whitespace from the content,
-# and store the cleaned text in `result`.
+# Text read from a file can have unwanted spaces around it. You already know
+# the fix from the Strings exercises: .strip().
 #
-# Hint: str.strip() removes surrounding whitespace from a string.
+# `source_path` contains "  Hello, World!  " with spaces at each end. Fix the code
+# so `result` has the spaces removed.
 
 import tempfile
 

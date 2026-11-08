@@ -1,22 +1,17 @@
 # Exercise: Collections 10
-# ------------------------
 # I AM NOT DONE
 #
-# Combine what you have learned to analyse a dataset end-to-end.
+# Time to use everything from this topic to analyse some data! `log` is a
+# list of (category, response time) pairs, from the requests made to a web
+# server.
 #
-# `log` is a list of (category, value) pairs representing web-server
-# requests: category is the endpoint group, value is the response time.
-#
-# Your tasks:
-#   1. Use `defaultdict(list)` named `grouped` to group response times
-#      by category.
-#   2. Build a `Counter` named `hit_counts` that maps each category to
-#      the number of requests it received.
-#   3. Store in `top_category` the name of the single most-requested
-#      category (the first element returned by `.most_common(1)`).
-#   4. Store in `avg_times` a plain dict mapping each category to the
-#      average (mean) response time for that category (sum / count).
-#      Use regular division — no imports needed.
+# 1. `grouped`: a defaultdict(list) of the response times for each category.
+# 2. `hit_counts`: a Counter of how many requests each category received.
+# 3. `top_category`: the name of the most-requested category.
+#    (.most_common(1) gives a list like [("api", 5)], so you'll need to dig
+#    the name out of it.)
+# 4. `avg_times`: a normal dictionary of the average response time for each
+#    category: the sum of its times divided by how many there are.
 
 from collections import defaultdict, Counter
 

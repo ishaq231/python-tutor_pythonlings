@@ -1,14 +1,17 @@
 # Exercise: Decorators 10
 # I AM NOT DONE
 #
-# Implement the `memoize` decorator: it caches the result of each unique
-# set of arguments so that the wrapped function is called at most once
-# per distinct input.
+# MEMOIZATION means remembering answers you've already worked out, so you
+# don't repeat slow work. A decorator is perfect for this. The cache is a
+# dictionary stored on the wrapper (wrapper.cache) with the arguments as the key:
 #
-# The cache should be stored in a dict as an attribute: wrapper.cache
-# Use the tuple of positional args as the cache key (assume no kwargs).
+#     if args in wrapper.cache:      <- seen before? use the saved answer
+#         ...
+#     else:
+#         ...work it out, then save it in wrapper.cache[args]
 #
-# Fill in the wrapper body — right now it ignores the cache entirely.
+# Finish the wrapper in `memoize` so that func is only called for arguments it
+# hasn't seen before.
 
 import functools
 

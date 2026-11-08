@@ -1,12 +1,10 @@
 # Exercise: File IO 9
 # I AM NOT DONE
 #
-# `essay_path` contains a short text with multiple words.
-# Count the total number of words in the file and store the count in
-# the variable `word_count`.
-#
-# A word is any whitespace-separated token — str.split() with no
-# argument splits on any whitespace and discards empty strings.
+# To count the words in a text: .split() with nothing in the brackets chops a
+# string into a list of words (at any spaces), and len() counts the list.
+# Right now the code counts letters instead of words. Fix it so `word_count`
+# is the number of words in the file.
 
 import tempfile
 

@@ -1,13 +1,13 @@
 # Exercise: Sets 8
 # I AM NOT DONE
 #
-# Test subset and superset relationships between sets.
+# Set A is a SUBSET of set B if every item of A is also in B. B is then
+# called a SUPERSET of A. (Think of a small circle completely inside a big circle.)
 #
-# Given `small` and `big` below, compute:
-#   is_subset   — True if `small` is a subset of `big`   (use <= or .issubset())
-#   is_superset — True if `big` is a superset of `small` (use >= or .issuperset())
+#     <=  or  .issubset()        >=  or  .issuperset()
 #
-# Expected: both is_subset and is_superset should be True.
+# Work out `is_subset` (is `small` a subset of `big`?) and `is_superset`
+# (is `big` a superset of `small`?).
 
 small = {2, 4}
 big = {1, 2, 3, 4, 5}

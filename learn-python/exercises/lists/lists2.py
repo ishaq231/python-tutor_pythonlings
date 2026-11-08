@@ -1,11 +1,17 @@
 # Exercise: Lists 2
 # I AM NOT DONE
 #
-# Fix the code below so that:
-#   - `first` holds the first element of `numbers` (should be 10)
-#   - the element at index 2 is changed from 30 to 99
+# You get one item from a list using its index, exactly like with strings. The
+# first item is at position 0. Unlike strings, lists can be CHANGED: you
+# can put a new item in a position.
 #
-# Only fix the two lines marked with ???.
+#     pets = ["cat", "dog"]
+#     pets[0]            gives "cat"
+#     pets[1] = "fish"   <- now pets is ["cat", "fish"]
+#
+# Only change the two lines with ??? in them:
+#     `first` should be the first item of `numbers` (it should be 10)
+#     the item at position 2 should be changed from 30 to 99
 
 numbers = [10, 20, 30, 40, 50]
 

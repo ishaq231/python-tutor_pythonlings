@@ -1,15 +1,12 @@
 # Exercise: Context Managers 5
 # I AM NOT DONE
 #
-# `__enter__` can return any value; that value becomes the target of the
-# `as` clause.  Fix `DatabaseConnection` so that `with db as conn:` gives
-# the caller a dict that they can use like a connection.
+# Whatever `__enter__` returns becomes the variable after `as`:
 #
-# `__enter__` should return `self.connection` (the dict already set up in
-# `__init__`).  `__exit__` should set `self.open` to False.
+#     with thing as x:      <- x is what thing.__enter__() returned
 #
-# Hint: `def __enter__(self): return self.connection`
-
+# Fix `DatabaseConnection.__enter__` so it returns `self.connection` (the
+# dictionary set up in __init__) instead of None.
 
 class DatabaseConnection:
     def __init__(self, dsn):

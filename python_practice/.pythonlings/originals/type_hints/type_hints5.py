@@ -1,13 +1,18 @@
 # Exercise: Type Hints 5
 # I AM NOT DONE
 #
-# Add type hints to the function `bounding_box`. It returns a tuple (a fixed-size group) of 4 numbers:
-#   - the parameter `points` is a `list[tuple[float, float]]` (a list of x, y pairs)
-#   - the function returns `tuple[float, float, float, float]`
-#     (this stands for min_x, min_y, max_x, max_y)
+# A TUPLE is a fixed group of values, like the pair returned in the Functions
+# exercises. In a hint you list the type of EACH position:
+#
+#     tuple[float, float]       exactly two decimals, like (1.5, 2.0)
+#
+# `bounding_box` takes a list of (x, y) points and returns a tuple of four
+# numbers: (min_x, min_y, max_x, max_y). Add type hints:
+#     points is a list[tuple[float, float]]
+#     it returns tuple[float, float, float, float]
 #
 # It should look like:
-#   def bounding_box(points: list[tuple[float, float]]) -> tuple[float, float, float, float]:
+#     def bounding_box(points: list[tuple[float, float]]) -> tuple[float, float, float, float]:
 
 def bounding_box(points):
     xs = [p[0] for p in points]

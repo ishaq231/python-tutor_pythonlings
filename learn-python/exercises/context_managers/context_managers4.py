@@ -1,15 +1,11 @@
 # Exercise: Context Managers 4
 # I AM NOT DONE
 #
-# `ManagedList` wraps a list and uses `__exit__` to do cleanup.
-# When the with-block exits normally, `__exit__` should append the
-# string "done" to `self.log`.
+# `__exit__` is the place for CLEAN-UP, the job you want done at the end no
+# matter what. Think of it as turning off the lights as you leave.
 #
-# The `__enter__` method is already written.  Complete `__exit__` so
-# that it appends "done" to `self.log` and returns None.
-#
-# Hint: `def __exit__(self, exc_type, exc_val, exc_tb): self.log.append("done")`
-
+# `ManagedList` already has an `__enter__`. Finish `__exit__` so it adds the
+# string "done" to self.log.
 
 class ManagedList:
     def __init__(self):

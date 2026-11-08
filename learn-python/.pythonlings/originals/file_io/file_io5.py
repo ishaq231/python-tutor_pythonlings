@@ -1,12 +1,11 @@
 # Exercise: File IO 5
 # I AM NOT DONE
 #
-# `journal_path` already has the line "day 1: sunny\n" written to it.
-# Open the same file in APPEND mode ("a") and write "day 2: rainy\n"
-# so that both lines are present in the file.
+# Writing with "w" wipes the file first! To ADD to a file without losing what is
+# already there, open it in append mode: "a".
 #
-# Append mode adds content after what already exists without erasing it.
-# Using "w" would overwrite and lose the first line — use "a" instead.
+# `journal_path` already contains "day 1: sunny". Fix the code so that
+# "day 2: rainy" is added after it, and both lines end up in the file.
 
 import tempfile
 

@@ -1,21 +1,21 @@
 # Exercise: Classes 12
 # I AM NOT DONE
 #
-# Complete the BankAccount class so that all of the following work:
+# Time to put classes together by building a bank account. Four things are
+# broken or missing. Fix them so this all works:
 #
-#   account = BankAccount("Alice", 100)
-#   account.deposit(50)       -> balance becomes 150
-#   account.withdraw(30)      -> balance becomes 120
-#   account.withdraw(200)     -> raises ValueError ("insufficient funds")
-#   str(account)              -> "BankAccount(Alice, balance=120)"
+#     account = BankAccount("Alice", 100)
+#     account.deposit(50)      -> balance becomes 150
+#     account.withdraw(30)     -> balance becomes 120
+#     account.withdraw(200)    -> raises ValueError("insufficient funds")
+#     str(account)             -> "BankAccount(Alice, balance=120)"
 #
-# Four things to fix:
-#  1. `deposit` currently does nothing — make it add `amount` to balance.
-#  2. `withdraw` currently does nothing — make it subtract `amount` from
-#     balance, and raise ValueError("insufficient funds") if amount > balance.
-#  3. `__str__` currently returns "" — return the correct string.
-#  4. The class is missing `__init__` entirely — add it to store
-#     `owner` and `balance` as instance attributes.
+# To fix:
+#  1. Add an `__init__` that stores `owner` and `balance`.
+#  2. `deposit` should add `amount` to the balance.
+#  3. `withdraw` should subtract `amount`, but raise a ValueError("insufficient
+#     funds") if amount is more than the balance.
+#  4. `__str__` should return the string shown above.
 
 class BankAccount:
     def deposit(self, amount):

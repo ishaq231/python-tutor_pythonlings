@@ -1,13 +1,21 @@
 # Exercise: Regex 1
 # I AM NOT DONE
 #
-# Use re.match to check whether `text` starts with the word "hello".
-# Store the result (a match object or None) in `result`.
+# A REGULAR EXPRESSION (or "regex") is a mini-language for describing patterns
+# in text, like "three digits then a dash". Python's `re` module uses them.
+# It's very handy for searching and checking text.
 #
-# re.match(pattern, string) returns a match object if the beginning of
-# `string` matches `pattern`, otherwise None.
+# The simplest pattern is just plain letters, which match themselves, so the
+# pattern "cat" matches the text "cat".
 #
-# Fix the pattern so that `result` is not None for the given `text`.
+#     re.match(pattern, text)
+#
+# `re.match` checks whether the text STARTS with the pattern. It gives back a
+# "match object" if it does, or None if it doesn't. (A match object counts as
+# True in an `if`, and None counts as False, remember truthiness!)
+#
+# Replace the ??? with a pattern that matches the start of `text`, which is
+# "hello world".
 
 import re
 

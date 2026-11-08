@@ -1,16 +1,13 @@
 # Exercise: Regex 8
 # I AM NOT DONE
 #
-# Use re.sub to censor every occurrence of a bad word in `text` by
-# replacing it with "***". The bad words are: "spam" and "junk".
-# Store the cleaned string in `clean`.
+# `re.sub(pattern, replacement, text)` finds every match and REPLACES it,
+# giving back a new string. It's like .replace() but far more powerful.
 #
-# re.sub(pattern, replacement, string) returns a new string with all
-# matches replaced by `replacement`.
+# The vertical bar | means "or", so spam|junk matches either "spam" or "junk".
 #
-# Hint: the pipe character | means "or" in a regex:  spam|junk
-#
-# Fix the pattern (replace ???).
+# Replace the ??? with a pattern that matches either bad word, so both get
+# changed to "***".
 
 import re
 

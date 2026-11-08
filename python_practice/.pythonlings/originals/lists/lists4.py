@@ -1,11 +1,16 @@
 # Exercise: Lists 4
 # I AM NOT DONE
 #
-# You have `items = ["apple", "banana", "cherry", "date"]`.
-# 1. Use `.remove()` to take "banana" out of the list.
-# 2. Use `.pop()` to take the last item off the list and save it in `last`.
-# When you are done, `items` should be ["apple", "cherry"]
-# and `last` should be "date".
+# Two ways to take items out of a list:
+#     list.remove(item)   removes the first item with that VALUE
+#     list.pop()          removes the LAST item and gives it back to you,
+#                         so you can save it in a variable.
+#                         (list.pop(2) takes out the item at position 2.)
+#
+# You have items = ["apple", "banana", "cherry", "date"].
+# 1. Use .remove() to take "banana" out.
+# 2. Use .pop() to take the last item off and save it in `last`.
+# Afterwards `items` should be ["apple", "cherry"] and `last` should be "date".
 
 items = ["apple", "banana", "cherry", "date"]
 

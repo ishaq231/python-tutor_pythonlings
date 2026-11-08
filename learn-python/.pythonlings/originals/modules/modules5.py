@@ -1,17 +1,15 @@
 # Exercise: Modules 5
-# --------------------
 # I AM NOT DONE
 #
-# The `string` module exposes useful constants.
-# Import `string` and use its constants to create:
+# Modules can hold plain values as well as functions. The `string` module
+# has ready-made collections of characters, so you don't have to type them
+# out yourself:
 #
-#   digits    — all digit characters ('0123456789')
-#   letters   — all ASCII letters (lower + upper, i.e. `string.ascii_letters`)
+#     string.digits           "0123456789"
+#     string.ascii_letters    all the lowercase and capital letters
 #
-# Assign each variable using the appropriate `string` constant directly
-# (do NOT construct them manually).
-
-# add the import here
+# Import `string` and set `digits` and `letters` to the matching constants
+# from the module. Don't type the characters out yourself.
 
 digits = ???
 letters = ???

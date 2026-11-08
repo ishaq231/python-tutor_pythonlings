@@ -1,15 +1,16 @@
 # Exercise: Generators 9
 # I AM NOT DONE
 #
-# Implement the full iterator protocol on `Counter`.
+# Behind the scenes, a `for` loop uses the ITERATOR PROTOCOL: it calls
+# `__iter__` to get an iterator, then keeps calling `__next__` on it. When
+# there is nothing left, __next__ must raise StopIteration to tell the loop
+# to stop:
 #
-# `Counter(stop)` should iterate over 0, 1, 2, ..., stop-1 — just like
-# range(stop).  You must implement both:
-#   __iter__(self)  — returns self
-#   __next__(self)  — returns the next value, or raises StopIteration
+#     raise StopIteration
 #
-# The broken version never raises StopIteration, so it loops forever.
-
+# Right now `Counter.__next__` goes on forever. Fix it so Counter(stop) counts
+# 0, 1, 2, ... up to stop - 1, just like range(stop), and then raises
+# StopIteration.
 
 class Counter:
     def __init__(self, stop):

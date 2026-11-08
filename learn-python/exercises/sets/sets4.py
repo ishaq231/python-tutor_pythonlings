@@ -1,12 +1,13 @@
 # Exercise: Sets 4
 # I AM NOT DONE
 #
-# Compute the union of two sets — every element that appears in either set.
+# Sets let you do maths with groups, just like Venn diagrams at school! Here
+# are `a` and `b`, two overlapping circles.
 #
-# Given `a` and `b`, store their union in `combined`.
-# Use the `|` operator or the `.union()` method.
+# The UNION of two sets is everything that is in either one (or both),
+# with no repeats. Use the `|` sign (or .union()).
 #
-# Expected: combined == {1, 2, 3, 4, 5, 6}
+# Save the union of `a` and `b` in `combined`.
 
 a = {1, 2, 3, 4}
 b = {3, 4, 5, 6}

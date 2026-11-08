@@ -1,12 +1,12 @@
 # Exercise: Collections 2
-# -----------------------
 # I AM NOT DONE
 #
-# `Counter.most_common(n)` returns the n most frequent elements as a list
-# of (element, count) pairs, highest count first.
+# A Counter has a handy method, .most_common(n). It gives back the n items
+# with the highest counts as a list of (item, count) tuples, biggest first.
 #
-# Given `votes`, build a Counter called `tally` and then store in
-# `top2` the two most common candidates (call `.most_common(2)`).
+#     Counter("aabbbc").most_common(2)     gives   [("b", 3), ("a", 2)]
+#
+# `tally` is already a Counter of the votes. Set `top2` to the two most common.
 
 from collections import Counter
 

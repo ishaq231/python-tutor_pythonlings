@@ -1,13 +1,14 @@
 # Exercise: Exceptions 3
 # I AM NOT DONE
 #
-# Complete describe_error(s) so that it tries to convert `s` to a float,
-# returning the float on success.  On failure it should return the string
-# representation of the exception message (i.e. str(e)), NOT a fixed string.
+# You can save the error itself in a variable using `as`. Printing or
+# converting it with str() gives the error message that Python wrote:
 #
-# Capture the exception object with `as`:
-#   except ValueError as e:
-#       return str(e)
+#     except ValueError as e:
+#         return str(e)
+#
+# Finish `describe_error(s)` so it tries to turn `s` into a float and returns
+# it. If it fails, it should return the error message (str(e)), NOT a fixed text.
 
 def describe_error(s):
     return float(s)

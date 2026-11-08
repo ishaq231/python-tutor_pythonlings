@@ -1,9 +1,13 @@
 # Exercise: Classes 9
 # I AM NOT DONE
 #
-# Add a `__repr__` method to Color so that repr(c) returns
-# "Color(r=<r>, g=<g>, b=<b>)" using the actual values.
-# The __str__ is already provided; you only need to add __repr__.
+# `__repr__` is a cousin of `__str__`. Where __str__ is a friendly message for
+# users, __repr__ is for programmers. It should show the object clearly,
+# ideally looking like the code that would make it. It's what you see when
+# debugging.
+#
+# Add a `__repr__` method to Color so that repr(c) gives
+# "Color(r=255, g=128, b=0)" (using the real values). The __str__ is already written.
 
 class Color:
     def __init__(self, r, g, b):
